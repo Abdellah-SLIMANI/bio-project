@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  background: url('./img//background2.png') no-repeat center center/cover;
+  user-select: none;
+}
+
+.step:not(.active):not(.step:first-child) {
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.step:not(.active):not(.step:first-child):hover {
+  opacity: 1;
+}
+
+.step:not(.active):not(.step:first-child) h2 {
+  transform: scale(2.6);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff7a;
+  width: fit-content;
+  font-weight: bold;
+  font-style: normal;
+  transition: all 1s ease-in-out;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+.ReactModal__Overlay {
+  background: #00000066 !important;
+}
+
+.ReactModal__Content {
+  border-radius: 12px !important;
+}
+
