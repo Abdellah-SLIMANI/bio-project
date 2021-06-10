@@ -2,7 +2,7 @@ import React from 'react'
 import Impress from './components/Impress'
 import Step from './components/Step'
 import SelectLanguage from './components/SelectLanguage'
-import tree from "./img/tree2.png"
+import tree from "./img/tree.png"
 import { Slide, Title, Paragraph, Spacing, Link, Background } from "./components/Styles"
 import { MainSlide, TreeImage, MainTitle } from './components/MainSlide'
 import { titre, paragraphe } from "./components/lang"
@@ -25,10 +25,10 @@ function App() {
             <MainTitle>
               {titre(lang, 1)}
             </MainTitle>
-            <TreeImage src={tree} alt="main image" />
+            {/* <TreeImage src={tree} alt="main image" /> */}
           </MainSlide>
         </Step>
-        <Step x={-140} y={-160} scale={0.07}>
+        <Step x={-180} y={-200} scale={0.07}>
           <Slide variant="block">
             <Title>{titre(lang, 2)}</Title>
             <Spacing h={3} />
@@ -46,7 +46,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={160} y={-160} scale={0.07}>
+        <Step x={190} y={-200} scale={0.07}>
           <Slide variant="block">
             <Title>{titre(lang, 4)}</Title>
             <Spacing h={3} />
@@ -55,7 +55,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-220} y={-63} scale={0.07}>
+        <Step x={-280} y={-63} scale={0.07}>
           <Slide variant="block">
             <Title>{titre(lang, 5)}</Title>
             <Spacing h={3} />
@@ -64,7 +64,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={187} y={100} scale={0.07}>
+        <Step x={230} y={100} scale={0.07}>
           <Slide variant="transparent">
             <Title>{titre(lang, 6)}</Title>
             <Spacing h={1} />
@@ -73,7 +73,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-193} y={280} scale={0.07}>
+        <Step x={-300} y={320} scale={0.07}>
           <Slide variant="block">
             <Title>{titre(lang, 7)}</Title>
             <Spacing h={3} />
@@ -82,7 +82,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-13} y={320} scale={0.07}>
+        <Step x={350} y={300} scale={0.07}>
           <Slide variant="block">
             <Title>{titre(lang, 8)}</Title>
             <Spacing h={3} />
@@ -91,7 +91,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={167} y={280} scale={0.07}>
+        <Step x={167} y={230} scale={0.07}>
           <Slide variant="block">
             <Title>{titre(lang, 9)}</Title>
             <Spacing h={3} />
@@ -100,7 +100,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={110} y={-100} scale={0.07}>
+        <Step x={300} y={-63} scale={0.07}>
           <Slide variant="gray">
             <Title>{titre(lang, 10)}</Title>
             <Paragraph>
@@ -111,7 +111,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-180} y={10} scale={0.07}>
+        <Step x={-180} y={100} scale={0.07}>
           <Slide variant="gray">
             <Title>{titre(lang, 11)}</Title>
             <Paragraph>
@@ -124,7 +124,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-90} y={200} scale={0.07}>
+        <Step x={-90} y={230} scale={0.07}>
           <Slide variant="transparent">
             <Title style={{ margin: "10px 0" }}>{titre(lang, 12)}</Title>
             <OrderBook lang={lang} />

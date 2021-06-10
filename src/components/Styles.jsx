@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components"
-import bg from "../img/background2.png"
+import bg from "../img/bg.jpg"
 
 const Slide = styled.div`
     padding: 1rem;

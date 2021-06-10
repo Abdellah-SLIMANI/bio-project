@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import img from "../img/home.png"
 
 const Button = styled.a`
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background: #1f1f1f;
     display: grid;
@@ -16,6 +16,7 @@ const Button = styled.a`
     right: 10px;
     transform: translateY(-50%);
     cursor: pointer;
+    border: solid 2px #A1F21D;
     
     & > img {
         width: 45%;
