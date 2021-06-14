@@ -14,6 +14,7 @@ const TreeImage = styled.img`
     margin: auto;
     position: relative;
     bottom: -10px;
+    transform: translate(0,10%)
 `
 
 const MainTitle = styled.h1`

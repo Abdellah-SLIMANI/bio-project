@@ -25,7 +25,7 @@ function App() {
             <MainTitle>
               {titre(lang, 1)}
             </MainTitle>
-            {/* <TreeImage src={tree} alt="main image" /> */}
+            <TreeImage src={tree} alt="main image" />
           </MainSlide>
         </Step>
         <Step x={-180} y={-200} scale={0.07}>
