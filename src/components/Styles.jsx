@@ -7,6 +7,7 @@ const Slide = styled.div`
     height: 720px;
     display: block;
     border-radius: 50px;
+    font-family: Amatic;
     /* overflow: hidden; */
     
     ${({ variant }) => {
@@ -52,7 +53,7 @@ const Title = styled.h2`
 `
 
 const Paragraph = styled.p`
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Optima;
     font-size: 3rem;
     letter-spacing: 1.4px;
     line-height: 1.2;

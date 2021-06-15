@@ -18,12 +18,12 @@ const TreeImage = styled.img`
 `
 
 const MainTitle = styled.h1`
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Amatic;
+    font-size: 3.5rem;
     text-align: center;
     position: absolute;
     left: 50%;
-    transform: translate(-50%,-150%);
-    font-size: 2rem;
+    transform: translate(-50%,-100%);
 `
 
 export {
