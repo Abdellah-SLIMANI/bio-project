@@ -8,26 +8,33 @@ const MainSlide = styled.div`
 `
 
 const TreeImage = styled.img`
-    height: 800px;
+    height: 1000px;
     width: auto;
     display: block;
     margin: auto;
     position: relative;
     bottom: -10px;
-    transform: translate(0,10%)
+    transform: translate(-45%,-7%)
 `
 
 const MainTitle = styled.h1`
     font-family: Amatic;
-    font-size: 3.5rem;
+    font-size: 4rem;
     text-align: center;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%,-100%);
+    right: 0;
+    transform: translate(0%,150%);
+`
+
+const MainLogo = styled.img`
+    width: auto;
+    height: 100px;
+    position: absolute;
 `
 
 export {
     MainSlide,
     TreeImage,
-    MainTitle
+    MainTitle,
+    MainLogo
 }
