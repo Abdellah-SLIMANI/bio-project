@@ -8,13 +8,13 @@ const MainSlide = styled.div`
 `
 
 const TreeImage = styled.img`
-    height: 1000px;
+    height: 900px;
     width: auto;
     display: block;
     margin: auto;
     position: relative;
     bottom: -10px;
-    transform: translate(-45%,-7%)
+    transform: translate(-50%,-4%)
 `
 
 const MainTitle = styled.h1`

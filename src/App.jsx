@@ -75,7 +75,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-450} y={380} scale={0.07}>
+        <Step x={-450} y={320} scale={0.07}>
           <Slide variant="block">
             <Title>{titre(lang, 7)}</Title>
             <Spacing h={3} />
@@ -84,7 +84,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-300} y={450} scale={0.07}>
+        <Step x={-300} y={390} scale={0.07}>
           <Slide variant="block">
             <Title>{titre(lang, 8)}</Title>
             <Spacing h={3} />
@@ -93,7 +93,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-150} y={380} scale={0.07}>
+        <Step x={-150} y={320} scale={0.07}>
           <Slide variant="block">
             <Title>{titre(lang, 9)}</Title>
             <Spacing h={3} />
