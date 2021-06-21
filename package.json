@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "vite --host --port 5000",
     "build": "vite build",
-    "start": "vite preview --port 5000"
+    "start": "vite preview --port 5555"
   },
   "dependencies": {
     "impress.js": "^1.1.0",
