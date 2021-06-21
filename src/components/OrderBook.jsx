@@ -11,10 +11,11 @@ const Grid = styled.div`
     width: 70%;
     margin: auto;
     align-items: center;
+    margin-top: 5rem;
 `
 
 const BookCover = styled.img`
-    width: 350px;
+    width: auto;
     margin: auto;
 `
 

@@ -14,7 +14,11 @@
 }
 
 body {
-  background: url('./img//skyBg.png') center/cover;
+    background: url('./img/bgbg.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   user-select: none;
 }
 
@@ -42,9 +46,7 @@ body {
   font-family: Optima; 
   background: rgba(229,235,246,0.7);
   font-weight: bolder;
-  text-transform: uppercase;
   font-style: normal;
-  border-radius: 60px;
   transition: all 1s ease-in-out;
   padding: 3rem;
   width: 1000px;

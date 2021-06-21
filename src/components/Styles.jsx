@@ -3,46 +3,16 @@ import bg from "../img/bgFinal.png"
 
 const Slide = styled.div`
     padding: 1rem;
-    width: 1280px;
-    height: 720px;
+    width: 1150px;
+    height: 60vh;
     display: block;
-    border-radius: 50px;
-    font-family: Amatic;
-    /* overflow: hidden; */
-    
-    ${({ variant }) => {
-        switch (variant) {
-            case "transparent":
-                return `
-                    background-color: transparent;
-                    box-shadow: 20px 20px 20px rgba(0,0,0,0.5);
-                    color: black;
-                    & h2 {
-                        font-weight: bold;
-                    }
-                    `
-            case "gray":
-                return `
-                    background-color: #f9f9f952;
-                    box-shadow: 20px 20px 20px rgba(0,0,0,0.5);
-                    color: black;
-                    & h2 {
-                        font-weight: bold;
-                    }
-                    `
-            case "block":
-                return `
-                    color: white;
-                    background-color: rgba(114,168,93,0.6);
-                    box-shadow: 20px 20px 20px rgba(0,0,0,0.5)
-                `
-            default:
-                return `
-                    color: white;
-                    background-color: rgba(114,168,93,0.6);
-                `
-        }
-    }}
+    font-family: Optima;
+    background-color: #f9f9f952;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    color: black;
+    & h2 {
+        font-weight: bold;
+    }
 `
 
 const Title = styled.h2`
@@ -84,11 +54,20 @@ const Background = styled.div`
     transform: translate(-50%, -50%);
 `
 
+const Soil = styled.img`
+    width: 110vw;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    transform: translate(-5%, 50%);
+`
+
 export {
     Slide,
     Title,
     Paragraph,
     Spacing,
     Link,
-    Background
+    Background,
+    Soil
 }

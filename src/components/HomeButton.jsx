@@ -3,20 +3,19 @@ import styled from 'styled-components'
 import img from "../img/home.png"
 
 const Button = styled.a`
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background: #1f1f1f;
+    background: black;
     display: grid;
     place-items: center;
     position: fixed;
     z-index: 500;
-    opacity: 0.8;
+    opacity: 0.7;
     top: 50%;
     right: 10px;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
     cursor: pointer;
-    border: solid 2px #A1F21D;
     
     & > img {
         width: 45%;

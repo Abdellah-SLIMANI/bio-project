@@ -8,33 +8,40 @@ const MainSlide = styled.div`
 `
 
 const TreeImage = styled.img`
-    height: 900px;
+    height: 1000px;
     width: auto;
     display: block;
     margin: auto;
     position: relative;
     bottom: -10px;
-    transform: translate(-50%,-4%)
+    transform: translate(-0%,-10%);
+    float: left;
 `
 
 const MainTitle = styled.h1`
     font-family: Amatic;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
-    position: absolute;
-    right: 0;
-    transform: translate(0%,150%);
+    color: black;
+`
+
+const MainSlideContentContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    transform: translate(35%, 120%);
+    width: fit-content;
+    float: right;
 `
 
 const MainLogo = styled.img`
     width: auto;
-    height: 100px;
-    position: absolute;
+    height: 200px;
 `
 
 export {
     MainSlide,
     TreeImage,
     MainTitle,
-    MainLogo
+    MainLogo,
+    MainSlideContentContainer,
 }
