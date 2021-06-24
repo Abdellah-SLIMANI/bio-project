@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "vite --host --port 5000",
     "build": "vite build",
-    "start": "vite preview --port 5555"
+    "start": "vite preview --host --port 6500"
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
