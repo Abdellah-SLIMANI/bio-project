@@ -7,11 +7,13 @@ import OrderModal from './OrderModal'
 const Grid = styled.div`
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 15px;
-    width: 70%;
+    grid-gap: 20%;
+    // width: 70%;
     margin: auto;
     align-items: center;
-    margin-top: 5rem;
+    // margin-top: 5rem;
+    padding: 3rem;
+    padding-inline: 10rem;
 `
 
 const BookCover = styled.img`
@@ -21,7 +23,7 @@ const BookCover = styled.img`
 
 const LinksWrapper = styled.div`
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Optima;
 
     h3 {
         font-size: 2rem;

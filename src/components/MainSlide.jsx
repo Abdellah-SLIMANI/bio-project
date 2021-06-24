@@ -35,7 +35,7 @@ const MainSlideContentContainer = styled.div`
 
 const MainLogo = styled.img`
     width: auto;
-    height: 200px;
+    height: 100px;
 `
 
 export {

@@ -1,36 +1,83 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Impress from './components/Impress'
 import Step from './components/Step'
 import SelectLanguage from './components/SelectLanguage'
 import tree from "./img/tree.png"
 import logo from './img/mainLogo.png'
 import soil from './img/soil.svg'
-import { Slide, Title, Paragraph, Spacing, Link, Background,Soil } from "./components/Styles"
+import { Slide, Title, Paragraph, Spacing, Link, Background,Soil,NavList,NavLink } from "./components/Styles"
 import { MainSlide, TreeImage, MainTitle,MainLogo,MainSlideContentContainer} from './components/MainSlide'
 import { titre, paragraphe } from "./components/lang"
 import OrderBook from './components/OrderBook'
 import HomeButton from './components/HomeButton'
+import Dropdown from 'react-bootstrap/Dropdown'
+import { DropdownButton, SplitButton } from 'react-bootstrap';
 
 function App() {
   const [lang, setLang] = React.useState("en");
   return (
     <>
-      <SelectLanguage 
-        lang={lang} 
-        handleChange={e => setLang(e.target.value)}  
-      />
-      <HomeButton />
+      <NavList>
+        <NavLink>
+        <MainLogo src={logo}/>
+        </NavLink>
+        <NavLink>
+          {/* <SelectLanguage 
+          lang={lang} 
+          handleChange={e => setLang(e.target.value)}  
+        /> */}
+                <Dropdown>
+  <DropdownButton id="dropdown-basic" key='left' drop='left' title='News'>
+    <Dropdown.Item value='en'>English</Dropdown.Item>
+    <Dropdown.Item value='fr'>Français</Dropdown.Item>
+    <Dropdown.Item value='du'>Deutsch</Dropdown.Item>
+  </DropdownButton>
+</Dropdown>  
+        </NavLink>
+        <NavLink>
+        <Dropdown>
+  <DropdownButton id="dropdown-basic" key='left' drop='left' title='Languages' lang = {lang} handleChange = {e => setLang(e.target.value)}>
+    <Dropdown.Item value='en'>English</Dropdown.Item>
+    <Dropdown.Item value='fr'>Français</Dropdown.Item>
+    <Dropdown.Item value='du'>Deutsch</Dropdown.Item>
+  </DropdownButton>
+</Dropdown>  
+        </NavLink>
+        <NavLink>
+          <HomeButton />
+        </NavLink>
+        <NavLink>
+        <Dropdown>
+  <DropdownButton id="dropdown-basic" key='left' drop='left' title='The Book'>
+  <OrderBook lang={lang}/>
+  </DropdownButton>
+</Dropdown>  
+        </NavLink>
+        <NavLink>
+        <Dropdown>
+  <DropdownButton id="dropdown-basic" key='left' drop='left' title='Contact' color='black'>
+    <div className='px-4'>
+    Eclosions <br />
+              Michaela Emch <br />
+              Rte de Praly 4 <br />
+              CH-1976 Aven <br />
+              <Link href="mailto:info@eclosions.ch">info@eclosions.ch</Link> <br />
+              +41 76 367 76 38
+    </div>
+  </DropdownButton>
+</Dropdown>  
+        </NavLink>
+      </NavList>
+      {/* <HomeButton /> */}
       <Soil src={soil}/>
       <Impress>
         <Step x={0} y={0}>
           <MainSlide>
             <Background />
-            <MainSlideContentContainer>
-              <MainLogo src={logo}/>
               <MainTitle>
                 {titre(lang, 1)}
               </MainTitle>
-            </MainSlideContentContainer>
             <TreeImage src={tree} alt="main image" />
           </MainSlide>
         </Step>
@@ -121,19 +168,14 @@ function App() {
           <Slide variant="gray">
             <Title>{titre(lang, 11)}</Title>
             <Paragraph>
-              Eclosions <br />
-              Michaela Emch <br />
-              Rte de Praly 4 <br />
-              CH-1976 Aven <br />
-              <Link href="mailto:info@eclosions.ch">info@eclosions.ch</Link> <br />
-              +41 76 367 76 38
+
             </Paragraph>
           </Slide>
         </Step>
         <Step x={-500} y={100} scale={0.07}>
           <Slide variant="transparent">
             <Title style={{ margin: "10px 0" }}>{titre(lang, 12)}</Title>
-            <OrderBook lang={lang} />
+
           </Slide>
         </Step>
       </Impress>

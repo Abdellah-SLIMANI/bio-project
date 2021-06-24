@@ -62,6 +62,26 @@ const Soil = styled.img`
     transform: translate(-5%, 50%);
 `
 
+const NavList = styled.ul`
+    position: absolute;
+    top: 0;
+    right: 3%;
+    list-style: none;
+    text-align: right;
+    align-items: right;
+`
+
+const NavLink = styled.li`
+    padding: 5%;
+    font-family: Optima;
+    font-weight: bold;
+    text-align: -webkit-right;
+`
+
+const RedText = styled.span`
+    color: red;
+`
+
 export {
     Slide,
     Title,
@@ -69,5 +89,8 @@ export {
     Spacing,
     Link,
     Background,
-    Soil
+    Soil,
+    NavList,
+    NavLink,
+    RedText
 }

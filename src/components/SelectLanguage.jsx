@@ -2,19 +2,18 @@ import React from 'react'
 import styled from "styled-components"
 
 const Select = styled.select`
-    position: absolute;
-    top: 3%;
-    right: 3%;
-    font-size: 16px;
+    position: relative;
+    // top: 3%;
+    // right: 3%;
+    // font-size: 16px;
     // padding: 2px 10px;
     border: none;
-    outline: none;
+    // outline: none;
     z-index: 500;
     // padding: 7px;
-    padding-inline: 3rem;
-    border: solid 2px black;
-    font-family: 'Amatic';
-    font-size: 2rem;
+    // padding-inline: 3rem;
+    // border: solid 2px black;
+    font-family: Optima;
     color: black;
     // border-radius: 14px;
     font-weight: bold;

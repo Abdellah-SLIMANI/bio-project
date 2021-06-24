@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "./Styles"
+import { Link, RedText} from "./Styles"
 const sentencesIn = {
     fr: [
         <>
@@ -179,7 +179,7 @@ const titleIn = {
     en: [
         <>
             Dare to engage in <br />
-            bioinfused  communication!    
+            <RedText>bioinfused</RedText>  communication!    
         </>,
 
         "Marketing & Branding",

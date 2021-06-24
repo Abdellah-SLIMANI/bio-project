@@ -88,3 +88,11 @@ body {
 .ReactModal__Content {
   border-radius: 12px !important;
 }
+
+/* OverWritting the Bootstrap styles */
+
+.dropdown-toggle{
+  background: none !important;
+  border: none !important;
+  text-align: right !important;
+}

@@ -7,14 +7,16 @@ const Button = styled.a`
     height: 50px;
     border-radius: 50%;
     background: black;
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     place-items: center;
-    position: fixed;
+    // position: fixed;
     z-index: 500;
     opacity: 0.7;
-    top: 50%;
+    // top: 50%;
     right: 10px;
-    transform: translateY(-100%);
+    // transform: translateY(-100%);
     cursor: pointer;
     
     & > img {
