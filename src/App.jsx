@@ -12,7 +12,7 @@ import { titre, paragraphe } from "./components/lang"
 import OrderBook from './components/OrderBook'
 import HomeButton from './components/HomeButton'
 import Dropdown from 'react-bootstrap/Dropdown'
-import { DropdownButton, SplitButton } from 'react-bootstrap';
+import { DropdownButton } from 'react-bootstrap';
 
 function App() {
   const [lang, setLang] = React.useState("en");
@@ -28,21 +28,21 @@ function App() {
           handleChange={e => setLang(e.target.value)}  
         /> */}
                 <Dropdown>
-  <DropdownButton id="dropdown-basic" key='left' drop='left' title='News'>
-    <Dropdown.Item value='en'>English</Dropdown.Item>
-    <Dropdown.Item value='fr'>Français</Dropdown.Item>
-    <Dropdown.Item value='du'>Deutsch</Dropdown.Item>
-  </DropdownButton>
-</Dropdown>  
-        </NavLink>
-        <NavLink>
-        <Dropdown>
-  <DropdownButton id="dropdown-basic" key='left' drop='left' title='Languages' lang = {lang} handleChange = {e => setLang(e.target.value)}>
-    <Dropdown.Item value='en'>English</Dropdown.Item>
-    <Dropdown.Item value='fr'>Français</Dropdown.Item>
-    <Dropdown.Item value='du'>Deutsch</Dropdown.Item>
-  </DropdownButton>
-</Dropdown>  
+      <DropdownButton id="dropdown-basic" key='left' drop='left' title='News'>
+        <Dropdown.Item value='en'>English</Dropdown.Item>
+        <Dropdown.Item value='fr'>Français</Dropdown.Item>
+        <Dropdown.Item value='du'>Deutsch</Dropdown.Item>
+      </DropdownButton>
+    </Dropdown>  
+            </NavLink>
+            <NavLink>
+            <Dropdown>
+      <DropdownButton id="dropdown-basic" key='left' drop='left' title='Languages' lang = {lang} handleChange = {e => setLang(e.target.value)}>
+        <Dropdown.Item value='en'>English</Dropdown.Item>
+        <Dropdown.Item value='fr'>Français</Dropdown.Item>
+        <Dropdown.Item value='du'>Deutsch</Dropdown.Item>
+      </DropdownButton>
+    </Dropdown>  
         </NavLink>
         <NavLink>
           <HomeButton />
@@ -74,14 +74,14 @@ function App() {
       <Impress>
         <Step x={0} y={0}>
           <MainSlide>
-            <Background />
-              <MainTitle>
+            {/* <Background /> */}
+            <TreeImage src={tree} alt="main image" />
+            <MainTitle>
                 {titre(lang, 1)}
               </MainTitle>
-            <TreeImage src={tree} alt="main image" />
           </MainSlide>
         </Step>
-        <Step x={-550} y={-250} scale={0.07}>
+        <Step x={-360} y={-190} scale={0.07}>
           <Slide>
             <Title>{titre(lang, 2)}</Title>
             <Spacing h={3} />
@@ -90,7 +90,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-350} y={-300} scale={0.07}>
+        <Step x={-180} y={-300} scale={0.07}>
           <Slide>
             <Title>{titre(lang, 3)}</Title>
             <Spacing h={3} />
@@ -99,7 +99,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-150} y={-250} scale={0.07}>
+        <Step x={-50} y={-190} scale={0.07}>
           <Slide>
             <Title>{titre(lang, 4)}</Title>
             <Spacing h={3} />
@@ -108,7 +108,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-500} y={-150} scale={0.07}>
+        <Step x={-400} y={0} scale={0.07}>
           <Slide>
             <Title>{titre(lang, 5)}</Title>
             <Spacing h={3} />
@@ -117,7 +117,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-80} y={150} scale={0.07}>
+        <Step x={-0} y={-50} scale={0.07}>
           <Slide>
             <Title>{titre(lang, 6)}</Title>
             <Spacing h={1} />
@@ -126,7 +126,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-450} y={320} scale={0.07}>
+        <Step x={-380} y={230} scale={0.07}>
           <Slide variant="block">
             <Title>{titre(lang, 7)}</Title>
             <Spacing h={3} />
@@ -135,7 +135,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-300} y={390} scale={0.07}>
+        <Step x={-200} y={300} scale={0.07}>
           <Slide variant="block">
             <Title>{titre(lang, 8)}</Title>
             <Spacing h={3} />
@@ -144,7 +144,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-150} y={320} scale={0.07}>
+        <Step x={-50} y={230} scale={0.07}>
           <Slide variant="block">
             <Title>{titre(lang, 9)}</Title>
             <Spacing h={3} />
@@ -153,7 +153,7 @@ function App() {
             </Paragraph>
           </Slide>
         </Step>
-        <Step x={-100} y={-150} scale={0.07}>
+        {/* <Step x={-100} y={-150} scale={0.07}>
           <Slide variant="gray">
             <Title>{titre(lang, 10)}</Title>
             <Paragraph>
@@ -171,8 +171,8 @@ function App() {
 
             </Paragraph>
           </Slide>
-        </Step>
-        <Step x={-500} y={100} scale={0.07}>
+        </Step> */}
+        <Step x={-550} y={150} scale={0.07}>
           <Slide variant="transparent">
             <Title style={{ margin: "10px 0" }}>{titre(lang, 12)}</Title>
 

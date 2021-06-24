@@ -55,11 +55,11 @@ const Background = styled.div`
 `
 
 const Soil = styled.img`
-    width: 110vw;
+    width: 80vw;
     position: absolute;
     bottom: 0;
     height: auto;
-    transform: translate(-5%, 50%);
+    transform: translate(-25%, 5%);
 `
 
 const NavList = styled.ul`
@@ -79,8 +79,10 @@ const NavLink = styled.li`
 `
 
 const RedText = styled.span`
-    color: red;
+    color: #e4022c;
 `
+
+
 
 export {
     Slide,
@@ -92,5 +94,5 @@ export {
     Soil,
     NavList,
     NavLink,
-    RedText
+    RedText,
 }

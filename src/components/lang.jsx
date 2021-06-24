@@ -192,17 +192,17 @@ const titleIn = {
 
         <>Who will guide you in this <br /> process?</>,
 
-        <>What is Bioinfused communication?</>,
+        <>What is it?</>,
 
         <>Why Bioinfused communication?</>,
 
-        "What is the method?",
+        "The method",
 
         "News – link to blog?",
 
         "Contact",
 
-        "Order the book"
+        "Our ecosystem"
     ],
     du: [
         <span style={{fontSize: "1.6rem"}}>

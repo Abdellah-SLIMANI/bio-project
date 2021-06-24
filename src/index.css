@@ -61,6 +61,7 @@ body {
 .step:not(.active):not(.step:first-child) h2:hover{
   background: rgb(229,235,246);
   transform: scale(2.7);
+  color: #e4022c;
 }
 
 
@@ -95,4 +96,11 @@ body {
   background: none !important;
   border: none !important;
   text-align: right !important;
+  color: black !important;
+  font-family: Myrad;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:active{
+  color: #e4022c !important;
 }

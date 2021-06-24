@@ -1,14 +1,15 @@
 import styled from "styled-components"
 
 const MainSlide = styled.div`
+    display: flex;
+    align-items: center;
     width: 1280px;
     height: 720px;
-    display: block;
     position: relative;
 `
 
 const TreeImage = styled.img`
-    height: 1000px;
+    height: 800px;
     width: auto;
     display: block;
     margin: auto;
@@ -23,14 +24,15 @@ const MainTitle = styled.h1`
     font-size: 3rem;
     text-align: center;
     color: black;
+    transform: translate(0,100%)
 `
 
 const MainSlideContentContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    transform: translate(35%, 120%);
-    width: fit-content;
-    float: right;
+    // display: flex;
+    // flex-direction: column;
+    // transform: translate(35%, 120%);
+    // width: fit-content;
+    // float: right;
 `
 
 const MainLogo = styled.img`
