@@ -4,10 +4,11 @@ import bg from "../img/bgFinal.png"
 const Slide = styled.div`
     padding: 1rem;
     width: 1150px;
-    height: 60vh;
+    height: auto;
     display: block;
     font-family: Optima;
     background-color: #f9f9f952;
+    padding-bottom: 10%;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
     color: black;
     & h2 {
@@ -16,27 +17,29 @@ const Slide = styled.div`
 `
 
 const Title = styled.h2`
-    font-size: 5.3rem;
+    font-size: 3rem;
     font-weight: 400;
+    margin-top: 3%;
     text-align: center;
     font-style: italic;
 `
 
 const Paragraph = styled.p`
     font-family: Optima;
-    font-size: 3rem;
+    font-size: 2.2rem;
     letter-spacing: 1.4px;
     line-height: 1.2;
     display: block;
     width: fit-content;
     margin: auto;
+    margin-top: 5%;
 `
 
 const Spacing = styled.div`
-    padding: 1rem 0;
-    ${({h}) => h && css`
-        padding: ${h}rem 0;
-    `}
+    // padding: 1rem 0;
+    // ${({h}) => h && css`
+    //     padding: ${h}rem 0;
+    // `}
 `
 
 const Link = styled.a`

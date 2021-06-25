@@ -29,18 +29,18 @@ function App() {
         /> */}
                 <Dropdown>
       <DropdownButton id="dropdown-basic" key='left' drop='left' title='News'>
-        <Dropdown.Item value='en'>English</Dropdown.Item>
-        <Dropdown.Item value='fr'>Français</Dropdown.Item>
-        <Dropdown.Item value='du'>Deutsch</Dropdown.Item>
+          <div className='p-3'>
+            {paragraphe(lang,9)}
+          </div>
       </DropdownButton>
     </Dropdown>  
             </NavLink>
             <NavLink>
             <Dropdown>
-      <DropdownButton id="dropdown-basic" key='left' drop='left' title='Languages' lang = {lang} handleChange = {e => setLang(e.target.value)}>
-        <Dropdown.Item value='en'>English</Dropdown.Item>
-        <Dropdown.Item value='fr'>Français</Dropdown.Item>
-        <Dropdown.Item value='du'>Deutsch</Dropdown.Item>
+      <DropdownButton id="dropdown-basic" key='left' drop='left' title='Languages'>
+        <Dropdown.Item onClick={()=> setLang('en')}>English</Dropdown.Item>
+        <Dropdown.Item onClick={()=> setLang('fr')}>Français</Dropdown.Item>
+        <Dropdown.Item onClick={()=> setLang('du')}>Deutsch</Dropdown.Item>
       </DropdownButton>
     </Dropdown>  
         </NavLink>

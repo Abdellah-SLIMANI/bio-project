@@ -91,11 +91,19 @@ const sentencesIn = {
             processes and systems how best to reach <br />
             your goal (inspired by the biomimicry methodology).
         </>,
-        "Send a message",
-        "Your Email",
-        "Postal code",
-        "Country",
-        "Send"
+        // "Send a message",
+        // "Your Email",
+        // "Postal code",
+        // "Country",
+        // "Send",
+        <>
+        Video Biomimicry Switzerland – “My
+        biomimicry journey” <br />
+        https://www.youtube.com/watch?v=gsAHHDG1I4Y <br />
+        Video GRC – “Introduction to biomimicry –
+        open discussion” (coming soon)
+        Podcast EEI (coming soon)
+        </>
     ],
     du: [
         <>
@@ -151,7 +159,7 @@ const sentencesIn = {
 const titleIn = {
     fr: [
         <>
-            Osez la communication <br /> bioinfusée!    
+            Osez la communication <br /> <RedText>bioinfusée!</RedText>    
         </>,
 
         "Marketing & Branding",
@@ -162,13 +170,13 @@ const titleIn = {
 
         "Que pouvez-vous attendre ?",
 
-        <>Qui vous guidera dans ce <br /> processus ?</>,
+        <>Qui vous guide ?</>,
 
         <>Qu'est-ce que la communication <br />bioinfusée ? </>,
 
         <>Pourquoi une communication bioinfusée ?</>,
 
-        "Quelle est la méthode ?",
+        "La méthode",
 
         "Nouvelles – lien vers blog ?",
 
@@ -190,7 +198,7 @@ const titleIn = {
 
         "What can you expect?",
 
-        <>Who will guide you in this <br /> process?</>,
+        <>Who guides you?</>,
 
         <>What is it?</>,
 
@@ -206,7 +214,7 @@ const titleIn = {
     ],
     du: [
         <span style={{fontSize: "1.6rem"}}>
-            Trauen Sie sich an die <br />bioinfundierte Kommunikation heran!  
+            Trauen Sie sich an die <br /><RedText>bioinfundierte</RedText> Kommunikation heran!  
         </span>,
 
         "Marketing & Branding",
@@ -217,13 +225,13 @@ const titleIn = {
 
         "Was können Sie erwarten?",
 
-        <>Wer wird Sie bei diesem <br /> Prozess begleiten?</>,
+        <>Wer begleitet Sie?</>,
 
         <>Was ist bioinfundierte Kommunikation?</>,
 
         <> Warum bioinfundierte Kommunikation?</>,
 
-        "Was ist die Methode?",
+        "Die Methode",
 
         "Neuigkeiten - Link zum Blog?",
 
