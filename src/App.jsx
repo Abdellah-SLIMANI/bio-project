@@ -6,7 +6,8 @@ import SelectLanguage from './components/SelectLanguage'
 import tree from "./img/tree.png"
 import logo from './img/mainLogo.png'
 import soil from './img/soil.svg'
-import { Slide, Title, Paragraph, Spacing, Link, Background,Soil,NavList,NavLink } from "./components/Styles"
+import portrait from './img/Michaela Emch portrait.jpeg'
+import { Slide, Title, Paragraph, Spacing, Link, Background,Soil,NavList,NavLink,FlexDiv} from "./components/Styles"
 import { MainSlide, TreeImage, MainTitle,MainLogo,MainSlideContentContainer} from './components/MainSlide'
 import { titre, paragraphe } from "./components/lang"
 import OrderBook from './components/OrderBook'
@@ -28,9 +29,9 @@ function App() {
           handleChange={e => setLang(e.target.value)}  
         /> */}
                 <Dropdown>
-      <DropdownButton id="dropdown-basic" key='left' drop='left' title='News'>
+      <DropdownButton id="dropdown-basic" key='left' drop='left' title={titre(lang,10)}>
           <div className='p-3'>
-            {paragraphe(lang,9)}
+            {paragraphe(lang,10)}
           </div>
       </DropdownButton>
     </Dropdown>  
@@ -58,12 +59,7 @@ function App() {
         <Dropdown>
   <DropdownButton id="dropdown-basic" key='left' drop='left' title='Contact' color='black'>
     <div className='px-4'>
-    Eclosions <br />
-              Michaela Emch <br />
-              Rte de Praly 4 <br />
-              CH-1976 Aven <br />
-              <Link href="mailto:info@eclosions.ch">info@eclosions.ch</Link> <br />
-              +41 76 367 76 38
+      {paragraphe(lang,11)}
     </div>
   </DropdownButton>
 </Dropdown>  
@@ -121,9 +117,12 @@ function App() {
           <Slide>
             <Title>{titre(lang, 6)}</Title>
             <Spacing h={1} />
+            <FlexDiv>
+              <img src={portrait} alt='Portrait'/>
             <Paragraph>
               {paragraphe(lang, 5)}
             </Paragraph>
+            </FlexDiv>
           </Slide>
         </Step>
         <Step x={-380} y={230} scale={0.07}>
@@ -175,7 +174,9 @@ function App() {
         <Step x={-550} y={150} scale={0.07}>
           <Slide variant="transparent">
             <Title style={{ margin: "10px 0" }}>{titre(lang, 12)}</Title>
-
+            <Paragraph>
+              {paragraphe(lang,9)}
+            </Paragraph>
           </Slide>
         </Step>
       </Impress>

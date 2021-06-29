@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, RedText} from "./Styles"
+import { Link, RedText,LinkSlide} from "./Styles"
 const sentencesIn = {
     fr: [
         <>
@@ -21,9 +21,9 @@ const sentencesIn = {
             éthiques, régénératrices et (re)connectantes.
         </>,
         <>
-            <Link target="_blank" href="https://www.linkedin.com/">Michaela Emch</Link>, spécialiste en communication <br />
-            et praticienne du biomimétisme. Auteur du livre <br />
-            "Vers une communication bioinfusée <br />
+            <LinkSlide target="_blank" href="https://www.linkedin.com/">Michaela Emch</LinkSlide>, spécialiste en communication
+            et praticienne du biomimétisme. Auteur du livre 
+            "Vers une communication bioinfusée 
             – Le Guide pour une Communication 
         </>,
         <>
@@ -42,10 +42,45 @@ const sentencesIn = {
             systèmes naturels la meilleure façon d'atteindre <br />
             votre objectif (inspiré de la méthodologie du biomimétisme).
         </>,
+        <>
+        Biomimicry Switzerland<br />
+        <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">https://biomimicryswitzerland.org</LinkSlide><br />
+        Ask Nature<br />
+        <LinkSlide target="_blank" href="https://asknature.org">https://asknature.org</LinkSlide><br />
+        LearnBiomimicry<br />
+        <LinkSlide target="_blank" href="https://www.learnbiomimicry.com">https://www.learnbiomimicry.com</LinkSlide><br />
+        Systems Innovation<br />
+        <LinkSlide target="_blank" href="https://www.systemsinnovation.io">https://www.systemsinnovation.io</LinkSlide><br />
+        Global Regeneration CoLab<br />
+        <LinkSlide target="_blank" href="https://www.grc.earth">https://www.grc.earth</LinkSlide><br />
+        Complexity Weekend<br />
+        <LinkSlide target="_blank" href="https://www.complexityweekend.com">https://www.complexityweekend.com</LinkSlide><br />
+        ETH Zürich – Systemics Design Labs<br />
+        <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">https://systemicdesignlabs.ethz.ch</LinkSlide><br />
+</>,
+        <>
+        Video Biomimicry Switzerland – “My
+        biomimicry journey” <br />
+        <Link target='_blank' href='https://www.youtube.com/watch?v=gsAHHDG1I4Y'>https://www.youtube.com/watch?v=gsAHHDG1I4Y</Link> <br />
+        Video GRC – “Introduction to biomimicry –
+        open discussion” (coming soon)
+        Podcast EEI (coming soon)
+        </>,
+        <>
+            Eclosions – Marketing &amp; Communication<br />
+              Michaela Emch <br />
+              Rte de Praly 4 <br />
+              CH-1976 Aven <br />
+              <Link href="mailto:info@eclosions.ch">info@eclosions.ch</Link> <br />
+              +41 76 367 76 38</>,
         "Envoyer un message",
-        "Votre Email",
+        "Nom",
+        "Prenom",
+        "Adresse",
         "Code postal",
+        "Localite",
         "Pays",
+        "Votre Email",
         "Envoyer"
 
     ],
@@ -70,9 +105,9 @@ const sentencesIn = {
             ethical, regenerative and (re)connecting.
         </>,
         <>
-            <Link target="_blank" href="https://www.linkedin.com/">Michaela Emch</Link>, communication specialist <br />
-            and biomimicry  practitioner. Author of the <br />
-            book “From Nature’s Mouth – The Handbook <br />
+            <Link target="_blank" href="https://www.linkedin.com/">Michaela Emch</Link>, communication specialist 
+            and biomimicry  practitioner. Author of the 
+            book “From Nature’s Mouth – The Handbook 
             for Bioinfused Human Communication”.
         </>,
         <>
@@ -91,19 +126,47 @@ const sentencesIn = {
             processes and systems how best to reach <br />
             your goal (inspired by the biomimicry methodology).
         </>,
-        // "Send a message",
-        // "Your Email",
-        // "Postal code",
-        // "Country",
-        // "Send",
+
+        <>
+        Biomimicry Switzerland<br />
+        <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">https://biomimicryswitzerland.org</LinkSlide><br />
+        Ask Nature<br />
+        <LinkSlide target="_blank" href="https://asknature.org">https://asknature.org</LinkSlide><br />
+        LearnBiomimicry<br />
+        <LinkSlide target="_blank" href="https://www.learnbiomimicry.com">https://www.learnbiomimicry.com</LinkSlide><br />
+        Systems Innovation<br />
+        <LinkSlide target="_blank" href="https://www.systemsinnovation.io">https://www.systemsinnovation.io</LinkSlide><br />
+        Global Regeneration CoLab<br />
+        <LinkSlide target="_blank" href="https://www.grc.earth">https://www.grc.earth</LinkSlide><br />
+        Complexity Weekend<br />
+        <LinkSlide target="_blank" href="https://www.complexityweekend.com">https://www.complexityweekend.com</LinkSlide><br />
+        ETH Zürich – Systemics Design Labs<br />
+        <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">https://systemicdesignlabs.ethz.ch</LinkSlide><br />
+        </>,
         <>
         Video Biomimicry Switzerland – “My
         biomimicry journey” <br />
-        https://www.youtube.com/watch?v=gsAHHDG1I4Y <br />
+        <Link target='_blank' href='https://www.youtube.com/watch?v=gsAHHDG1I4Y'>https://www.youtube.com/watch?v=gsAHHDG1I4Y</Link> <br />
         Video GRC – “Introduction to biomimicry –
         open discussion” (coming soon)
         Podcast EEI (coming soon)
-        </>
+        </>,
+        <>
+            Eclosions – Marketing &amp; Communication<br />
+              Michaela Emch <br />
+              Rte de Praly 4 <br />
+              CH-1976 Aven <br />
+              <Link href="mailto:info@eclosions.ch">info@eclosions.ch</Link> <br />
+              +41 76 367 76 38</>,
+              "Send a message",
+              "Name",
+              "First Name",
+              "Address",
+              "Postal Code",
+              "City",
+              "Country",
+              "Your Email",
+              "Send",
     ],
     du: [
         <>
@@ -126,9 +189,9 @@ const sentencesIn = {
             regenerativ und (wieder) verbindend sind.
         </>,
         <>
-            <Link target="_blank" href="https://www.linkedin.com/">Michaela Emch</Link>, Kommunikationsspezialistin <br /> und 
-            Biomimikry-Praktikerin. Autorin des Buches <br /> "From Nature's Mouth
-            - The Handbook for <br />
+            <Link target="_blank" href="https://www.linkedin.com/">Michaela Emch</Link>, Kommunikationsspezialistin und 
+            Biomimikry-Praktikerin. Autorin des Buches  "From Nature's Mouth
+            - The Handbook for
             Bioinfused Human Communication".
         </>,
         <>
@@ -147,12 +210,46 @@ const sentencesIn = {
             Prozessen und Systemen suchen, wie Sie Ihr Ziel am <br />
             besten erreichen können (inspiriert von der Biomimikry-Methodik).
         </>,
+        <>
+        Biomimicry Switzerland<br />
+        <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">https://biomimicryswitzerland.org</LinkSlide><br />
+        Ask Nature<br />
+        <LinkSlide target="_blank" href="https://asknature.org">https://asknature.org</LinkSlide><br />
+        LearnBiomimicry<br />
+        <LinkSlide target="_blank" href="https://www.learnbiomimicry.com">https://www.learnbiomimicry.com</LinkSlide><br />
+        Systems Innovation<br />
+        <LinkSlide target="_blank" href="https://www.systemsinnovation.io">https://www.systemsinnovation.io</LinkSlide><br />
+        Global Regeneration CoLab<br />
+        <LinkSlide target="_blank" href="https://www.grc.earth">https://www.grc.earth</LinkSlide><br />
+        Complexity Weekend<br />
+        <LinkSlide target="_blank" href="https://www.complexityweekend.com">https://www.complexityweekend.com</LinkSlide><br />
+        ETH Zürich – Systemics Design Labs<br />
+        <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">https://systemicdesignlabs.ethz.ch</LinkSlide><br />
+        </>,
+        <>
+        Video Biomimicry Switzerland – “My
+        biomimicry journey” <br />
+        <Link target='_blank' href='https://www.youtube.com/watch?v=gsAHHDG1I4Y'>https://www.youtube.com/watch?v=gsAHHDG1I4Y</Link> <br />
+        Video GRC – “Introduction to biomimicry –
+        open discussion” (coming soon)
+        Podcast EEI (coming soon)
+        </>,
+        <>
+            Eclosions – Marketing &amp; Communication<br />
+              Michaela Emch <br />
+              Rte de Praly 4 <br />
+              CH-1976 Aven <br />
+              <Link href="mailto:info@eclosions.ch">info@eclosions.ch</Link> <br />
+              +41 76 367 76 38</>,
         "Eine Nachricht schicken",
-        "Deine E-Mail",
+        "Name",
+        "Vorname",
+        "Adresse",
         "Postleitzahl",
+        "Ort",
         "Land",
+        "Deine E-Mail",
         "Senden"
-
     ]
 }
 
@@ -178,11 +275,11 @@ const titleIn = {
 
         "La méthode",
 
-        "Nouvelles – lien vers blog ?",
+        "Nouvelles",
 
         "Contact",
         
-        "Commandez le livre"
+        "Notre écosystème"
     ],
     en: [
         <>
@@ -206,7 +303,7 @@ const titleIn = {
 
         "The method",
 
-        "News – link to blog?",
+        "News",
 
         "Contact",
 
@@ -233,11 +330,11 @@ const titleIn = {
 
         "Die Methode",
 
-        "Neuigkeiten - Link zum Blog?",
+        "Neuigkeiten",
 
         "Kontakt",
 
-        <span style={{ fontSize: "4rem" }}>Bestellen Sie das Buch (auf Englisch)</span>
+        <span>Unser Ökosystem</span>
     ],
 }
 

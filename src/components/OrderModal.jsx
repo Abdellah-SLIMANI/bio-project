@@ -45,15 +45,23 @@ function OrderModal({ isOpen, setIsOpen, lang }) {
         onRequestClose={() => setIsOpen(false)}
         closeTimeoutMS={300}
         >
-            <Title>{ paragraphe(lang, 9) }</Title>
+            <Title>{ paragraphe(lang, 12) }</Title>
             <Form>
-                <Label>{ paragraphe(lang, 10) }</Label>
-                <Input type="email" />
-                <Label>{ paragraphe(lang, 11) }</Label>
-                <Input type="number" />
-                <Label>{ paragraphe(lang, 12) }</Label>
+                <Label>{ paragraphe(lang, 13) }</Label>
                 <Input type="text" />
-                <Button type="submit">{ paragraphe(lang, 13) }</Button>
+                <Label>{ paragraphe(lang, 14) }</Label>
+                <Input type="text" />
+                <Label>{ paragraphe(lang, 15) }</Label>
+                <Input type="text" />
+                <Label>{ paragraphe(lang, 16) }</Label>
+                <Input type="number" />
+                <Label>{ paragraphe(lang, 17) }</Label>
+                <Input type="text" />
+                <Label>{ paragraphe(lang, 18) }</Label>
+                <Input type="text" />
+                <Label>{ paragraphe(lang, 19) }</Label>
+                <Input type="email" />
+                <Button type="submit">{ paragraphe(lang, 16) }</Button>
             </Form>
         </Modal>
     )

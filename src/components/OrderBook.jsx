@@ -61,6 +61,7 @@ function OrderBook({ lang }) {
                     alt="Book cover" 
                 />
                 <LinksWrapper>
+                {/* <iframe src='../files/Livre ME Communiqué D'>« Learn more about the book »</iframe> */}
                     <div>
                         <h3>Electronic version</h3>
                         <a 

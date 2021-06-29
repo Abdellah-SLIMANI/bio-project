@@ -26,7 +26,7 @@ const Title = styled.h2`
 
 const Paragraph = styled.p`
     font-family: Optima;
-    font-size: 2.2rem;
+    font-size: 2rem;
     letter-spacing: 1.4px;
     line-height: 1.2;
     display: block;
@@ -43,8 +43,13 @@ const Spacing = styled.div`
 `
 
 const Link = styled.a`
-    color: inherit;
-    text-decoration-color: red;
+    color: red;
+    font-size: 1rem;
+`
+
+const LinkSlide = styled.a`
+    color: red;
+    font-size: 1.5rem;
 `
 
 const Background = styled.div`
@@ -85,6 +90,15 @@ const RedText = styled.span`
     color: #e4022c;
 `
 
+const FlexDiv = styled.div`
+    display: flex;
+    flex-direction: row;
+    & img {
+        padding: 2em;
+        width: 35%
+    }
+`
+
 
 
 export {
@@ -98,4 +112,6 @@ export {
     NavList,
     NavLink,
     RedText,
+    FlexDiv,
+    LinkSlide
 }
