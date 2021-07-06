@@ -4,7 +4,7 @@ import Impress from './components/Impress'
 import Step from './components/Step'
 import tree from "./img/tree.png"
 import logo from './img/mainLogo.png'
-import portrait from './img/Michaela Emch portrait.jpeg'
+import portrait from './img/michaela.jpeg'
 import { Slide, Title, Paragraph, Spacing, NavList,NavLink,FlexDiv} from "./components/Styles"
 import { MainSlide, TreeImage, MainTitle,MainLogo} from './components/MainSlide'
 import { titre, paragraphe } from "./components/lang"

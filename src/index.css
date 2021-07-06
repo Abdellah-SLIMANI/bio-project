@@ -112,3 +112,14 @@ body {
 .dropleft .dropdown-toggle::before {
   display: none !important;
 }
+
+.jvCTkj {
+  padding: 1rem 1rem 10%;
+  width: 70vw;
+  height: auto;
+  display: block;
+  font-family: Optima;
+  background-color: rgba(249, 249, 249, 0.32);
+  box-shadow: rgb(0 0 0 / 30%) 0px 0px 10px;
+  color: black;
+}
