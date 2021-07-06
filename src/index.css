@@ -14,7 +14,6 @@
 }
 
 body {
-    background: url('./img/bgbg.jpg');
     height: 100%;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -108,4 +107,8 @@ body {
 .dropdown-toggle:hover,
 .dropdown-toggle:active{
   color: #e4022c !important;
+}
+
+.dropleft .dropdown-toggle::before {
+  display: none !important;
 }

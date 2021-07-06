@@ -278,8 +278,6 @@ const titleIn = {
         "Nouvelles",
 
         "Contact",
-        
-        "Notre écosystème"
     ],
     en: [
         <>
@@ -307,7 +305,6 @@ const titleIn = {
 
         "Contact",
 
-        "Our ecosystem"
     ],
     du: [
         <span style={{fontSize: "1.6rem"}}>
@@ -334,7 +331,6 @@ const titleIn = {
 
         "Kontakt",
 
-        <span>Unser Ökosystem</span>
     ],
 }
 

@@ -20,9 +20,9 @@ function Impress(props) {
   return (
     <div
       id="impress"
-      data-transition-duration="1000"
-      data-width="1280"
-      data-height="720"
+      data-transition-duration="600"
+      data-width="1100"
+      data-height="650"
       data-perspective="1000"
     >
       {children}

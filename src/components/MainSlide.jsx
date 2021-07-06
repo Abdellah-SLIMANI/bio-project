@@ -3,13 +3,13 @@ import styled from "styled-components"
 const MainSlide = styled.div`
     display: flex;
     align-items: center;
-    width: 1280px;
-    height: 720px;
+    width: 85vw;
+    height: 80vh;
     position: relative;
 `
 
 const TreeImage = styled.img`
-    height: 800px;
+    height: 90vh;
     width: auto;
     display: block;
     margin: auto;
@@ -20,9 +20,10 @@ const TreeImage = styled.img`
 `
 
 const MainTitle = styled.h1`
-    font-family: Amatic;
-    font-size: 3rem;
-    text-align: center;
+    font-family: Arial;
+    font-size: 1.6rem;
+    margin-top: 100px;
+    text-align: left;
     color: black;
     transform: translate(0,100%)
 `

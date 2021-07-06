@@ -3,7 +3,7 @@ import bg from "../img/bgFinal.png"
 
 const Slide = styled.div`
     padding: 1rem;
-    width: 1150px;
+    width: 75%;
     height: auto;
     display: block;
     font-family: Optima;
