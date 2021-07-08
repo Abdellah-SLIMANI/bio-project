@@ -64,7 +64,10 @@ const sentencesIn = {
         <Link target='_blank' href='https://www.youtube.com/watch?v=gsAHHDG1I4Y'>https://www.youtube.com/watch?v=gsAHHDG1I4Y</Link> <br />
         Video GRC – “Introduction to biomimicry –
         open discussion” (coming soon)
-        Podcast EEI (coming soon)
+        Podcast EEI (coming soon)<br/>
+            GRC WorldWide CoWorking Session sur le biomimetisme avec Michaela Emch": <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>https://youtu.be/2XhlLstMeqI
+        </Link><br/>
+            "Discussion sur GRC biomimetisme" :<Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> https://youtu.be/pDhyCg9RO0E</Link>
         </>,
         <>
             Eclosions – Marketing &amp; Communication<br />
@@ -149,7 +152,11 @@ const sentencesIn = {
         <Link target='_blank' href='https://www.youtube.com/watch?v=gsAHHDG1I4Y'>https://www.youtube.com/watch?v=gsAHHDG1I4Y</Link> <br />
         Video GRC – “Introduction to biomimicry –
         open discussion” (coming soon)
-        Podcast EEI (coming soon)
+        Podcast EEI (coming soon)<br/>
+            GRC WorldWide CoWorking Session on Biomimicry with Michaela Emch<Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>https://youtu.be/2XhlLstMeqI
+        </Link><br/>
+            "GRC Biomimicry Discussion" :<Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> https://youtu.be/pDhyCg9RO0E</Link>
+
         </>,
         <>
             Eclosions – Marketing &amp; Communication<br />
@@ -233,6 +240,11 @@ const sentencesIn = {
         Video GRC – “Introduction to biomimicry –
         open discussion” (coming soon)
         Podcast EEI (coming soon)
+            <br/>
+            GRC WorldWide CoWorking Session zu Biomimikry mit Michaela Emch ": <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>https://youtu.be/2XhlLstMeqI
+        </Link><br/>
+            "Diskussion über GRC Biomimicry" :<Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> https://youtu.be/pDhyCg9RO0E</Link>
+
         </>,
         <>
             Eclosions – Marketing &amp; Communication<br />
