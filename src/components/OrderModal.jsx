@@ -35,7 +35,7 @@ const Button = styled.button`
     font-weight: bold;
     color: white;
     border: none;
-    background-color: #36753c;
+    background-color: #e21137;
 `
 
 function OrderModal({ isOpen, setIsOpen, lang }) {
@@ -45,7 +45,6 @@ function OrderModal({ isOpen, setIsOpen, lang }) {
         onRequestClose={() => setIsOpen(false)}
         closeTimeoutMS={300}
         >
-            <Title>{ paragraphe(lang, 12) }</Title>
             <Form>
                 <Label>{ paragraphe(lang, 13) }</Label>
                 <Input type="text" />
@@ -61,7 +60,7 @@ function OrderModal({ isOpen, setIsOpen, lang }) {
                 <Input type="text" />
                 <Label>{ paragraphe(lang, 19) }</Label>
                 <Input type="email" />
-                <Button type="submit">{ paragraphe(lang, 16) }</Button>
+                <Button type="submit" >{ paragraphe(lang, 20) }</Button>
             </Form>
         </Modal>
     )

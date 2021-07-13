@@ -3,6 +3,7 @@ import styled from "styled-components"
 import bookEn from "../img/booken.jpg"
 import bookFr from "../img/bookfr.jpg"
 import OrderModal from './OrderModal'
+import { Link} from "./Styles"
 
 const Grid = styled.div`
     display: grid;
@@ -23,7 +24,7 @@ const BookCover = styled.img`
 
 const LinksWrapper = styled.div`
     text-align: center;
-    font-family: Optima;
+    font-family: Optima, sans-serif;
 
     h3 {
         font-size: 2rem;
@@ -55,26 +56,17 @@ function OrderBook({ lang }) {
     const [isOpen, setIsOpen] = React.useState(false);
     return (
         <>
-            <Grid>
-                <BookCover 
-                    src={lang === "fr" ? bookFr : bookEn} 
-                    alt="Book cover" 
-                />
-                <LinksWrapper>
-                {/* <iframe src='../files/Livre ME Communiqué D'>« Learn more about the book »</iframe> */}
-                    <div>
-                        <h3>Electronic version</h3>
-                        <a 
-                            target="_blank"
-                            href={lang === "fr" ? frURL : enURL}
-                        >link to Amazon</a>
-                    </div>
-                    <div>
-                        <h3>Paper version</h3>
-                        <a onClick={() => setIsOpen(true)}>drop a line</a>
-                    </div>
-                </LinksWrapper>
-            </Grid>
+
+            <ul>
+                <li>
+                    <Link target='_blank'
+                    href={lang === "fr" ? frURL : enURL}
+                    >Electronic version</Link>
+                </li>
+                <li>
+                    <Link onClick={() => setIsOpen(true)}>Paper version</Link>
+                </li>
+            </ul>
             <OrderModal 
                 isOpen={isOpen} 
                 setIsOpen={setIsOpen} 

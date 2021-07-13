@@ -1,5 +1,9 @@
 import React from "react";
 import { Link, RedText,LinkSlide} from "./Styles"
+const frURL = " https://www.amazon.com/Vers-une-Communication-Bioinfusée-Biomimiétisme-ebook/dp/B0916QY7FQ/ref=sr_1_1?dchild=1&keywords=vers+une+communication+bioinfusée&qid=1622468018&s=digital-text&sr=1-1"
+
+const enURL = "https://www.amazon.com/gp/product/B08WLTXRZS?pf_rd_r=WCC1QFVM4MGYSSVFBXQJ&pf_rd_p=5ae2c7f8-e0c6-4f35-9071-dc3240e894a8&pd_rd_r=8c85bc34-4f39-41d0-9bf7-a0c2cdc367e6&pd_rd_w=23yoe&pd_rd_wg=WcEBq&ref_=pd_gw_unk"
+
 const sentencesIn = {
     fr: [
         <>
@@ -21,7 +25,7 @@ const sentencesIn = {
             éthiques, régénératrices et (re)connectantes.
         </>,
         <>
-            <LinkSlide target="_blank" href="https://www.linkedin.com/">Michaela Emch</LinkSlide>, spécialiste en communication
+            <Link target="_blank" href="https://www.linkedin.com/in/michaelaemch/" style={{fontSize: '2rem', color: '#e21137'}}>Michaela Emch</Link>,, spécialiste en communication
             et praticienne du biomimétisme. Auteur du livre 
             "Vers une communication bioinfusée 
             – Le Guide pour une Communication 
@@ -43,31 +47,24 @@ const sentencesIn = {
             votre objectif (inspiré de la méthodologie du biomimétisme).
         </>,
         <>
-        Biomimicry Switzerland<br />
-        <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">https://biomimicryswitzerland.org</LinkSlide><br />
-        Ask Nature<br />
-        <LinkSlide target="_blank" href="https://asknature.org">https://asknature.org</LinkSlide><br />
-        LearnBiomimicry<br />
-        <LinkSlide target="_blank" href="https://www.learnbiomimicry.com">https://www.learnbiomimicry.com</LinkSlide><br />
-        Systems Innovation<br />
-        <LinkSlide target="_blank" href="https://www.systemsinnovation.io">https://www.systemsinnovation.io</LinkSlide><br />
-        Global Regeneration CoLab<br />
-        <LinkSlide target="_blank" href="https://www.grc.earth">https://www.grc.earth</LinkSlide><br />
-        Complexity Weekend<br />
-        <LinkSlide target="_blank" href="https://www.complexityweekend.com">https://www.complexityweekend.com</LinkSlide><br />
-        ETH Zürich – Systemics Design Labs<br />
-        <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">https://systemicdesignlabs.ethz.ch</LinkSlide><br />
+        <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
+        <LinkSlide target="_blank" href="https://asknature.org"> Ask Nature</LinkSlide><br />
+        <LinkSlide target="_blank" href="https://www.learnbiomimicry.com">LearnBiomimicry</LinkSlide><br />
+        <LinkSlide target="_blank" href="https://www.systemsinnovation.io"> Systems Innovation</LinkSlide><br />
+        <LinkSlide target="_blank" href="https://www.grc.earth">Global Regeneration CoLab</LinkSlide><br />
+        <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
+        <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
 </>,
         <>
-        Video Biomimicry Switzerland – “My
-        biomimicry journey” <br />
-        <Link target='_blank' href='https://www.youtube.com/watch?v=gsAHHDG1I4Y'>https://www.youtube.com/watch?v=gsAHHDG1I4Y</Link> <br />
-        Video GRC – “Introduction to biomimicry –
-        open discussion” (coming soon)
-        Podcast EEI (coming soon)<br/>
-            GRC WorldWide CoWorking Session sur le biomimetisme avec Michaela Emch": <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>https://youtu.be/2XhlLstMeqI
-        </Link><br/>
-            "Discussion sur GRC biomimetisme" :<Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> https://youtu.be/pDhyCg9RO0E</Link>
+            <ul>
+                <li> <Link target='_blank' href='https://www.youtube.com/watch?v=gsAHHDG1I4Y'>
+                    Video Biomimicry Switzerland – “My
+                    biomimicry journey”
+                </Link> </li>
+                <li> <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>GRC WorldWide CoWorking Session on Biomimicry with Michaela Emch
+                </Link></li>
+                <li> <Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> GRC Biomimicry Discussion</Link></li>
+            </ul>
         </>,
         <>
             Eclosions – Marketing &amp; Communication<br />
@@ -84,7 +81,7 @@ const sentencesIn = {
         "Localite",
         "Pays",
         "Votre Email",
-        "Envoyer"
+        "Commander le livre"
 
     ],
     en: [
@@ -108,7 +105,7 @@ const sentencesIn = {
             ethical, regenerative and (re)connecting.
         </>,
         <>
-            <Link target="_blank" href="https://www.linkedin.com/">Michaela Emch</Link>, communication specialist 
+            <Link target="_blank" href="https://www.linkedin.com/in/michaelaemch/" style={{fontSize: '2rem', color: '#e21137'}}>Michaela Emch</Link>, communication specialist
             and biomimicry  practitioner. Author of the 
             book “From Nature’s Mouth – The Handbook 
             for Bioinfused Human Communication”.
@@ -129,34 +126,25 @@ const sentencesIn = {
             processes and systems how best to reach <br />
             your goal (inspired by the biomimicry methodology).
         </>,
-
         <>
-        Biomimicry Switzerland<br />
-        <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">https://biomimicryswitzerland.org</LinkSlide><br />
-        Ask Nature<br />
-        <LinkSlide target="_blank" href="https://asknature.org">https://asknature.org</LinkSlide><br />
-        LearnBiomimicry<br />
-        <LinkSlide target="_blank" href="https://www.learnbiomimicry.com">https://www.learnbiomimicry.com</LinkSlide><br />
-        Systems Innovation<br />
-        <LinkSlide target="_blank" href="https://www.systemsinnovation.io">https://www.systemsinnovation.io</LinkSlide><br />
-        Global Regeneration CoLab<br />
-        <LinkSlide target="_blank" href="https://www.grc.earth">https://www.grc.earth</LinkSlide><br />
-        Complexity Weekend<br />
-        <LinkSlide target="_blank" href="https://www.complexityweekend.com">https://www.complexityweekend.com</LinkSlide><br />
-        ETH Zürich – Systemics Design Labs<br />
-        <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">https://systemicdesignlabs.ethz.ch</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://asknature.org"> Ask Nature</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.learnbiomimicry.com">LearnBiomimicry</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.systemsinnovation.io"> Systems Innovation</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.grc.earth">Global Regeneration CoLab</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
         </>,
         <>
-        Video Biomimicry Switzerland – “My
-        biomimicry journey” <br />
-        <Link target='_blank' href='https://www.youtube.com/watch?v=gsAHHDG1I4Y'>https://www.youtube.com/watch?v=gsAHHDG1I4Y</Link> <br />
-        Video GRC – “Introduction to biomimicry –
-        open discussion” (coming soon)
-        Podcast EEI (coming soon)<br/>
-            GRC WorldWide CoWorking Session on Biomimicry with Michaela Emch<Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>https://youtu.be/2XhlLstMeqI
-        </Link><br/>
-            "GRC Biomimicry Discussion" :<Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> https://youtu.be/pDhyCg9RO0E</Link>
-
+            <ul>
+                <li> <Link target='_blank' href='https://www.youtube.com/watch?v=gsAHHDG1I4Y'>
+            Video Biomimicry Switzerland – “My
+            biomimicry journey”
+        </Link> </li>
+                <li> <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>GRC WorldWide CoWorking Session on Biomimicry with Michaela Emch
+                </Link></li>
+                <li> <Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> GRC Biomimicry Discussion</Link></li>
+            </ul>
         </>,
         <>
             Eclosions – Marketing &amp; Communication<br />
@@ -173,7 +161,7 @@ const sentencesIn = {
               "City",
               "Country",
               "Your Email",
-              "Send",
+              "Order the book",
     ],
     du: [
         <>
@@ -196,7 +184,7 @@ const sentencesIn = {
             regenerativ und (wieder) verbindend sind.
         </>,
         <>
-            <Link target="_blank" href="https://www.linkedin.com/">Michaela Emch</Link>, Kommunikationsspezialistin und 
+            <Link target="_blank" href="https://www.linkedin.com/in/michaelaemch/" style={{fontSize: '2rem', color: '#e21137'}}>Michaela Emch</Link>, Kommunikationsspezialistin und
             Biomimikry-Praktikerin. Autorin des Buches  "From Nature's Mouth
             - The Handbook for
             Bioinfused Human Communication".
@@ -218,33 +206,24 @@ const sentencesIn = {
             besten erreichen können (inspiriert von der Biomimikry-Methodik).
         </>,
         <>
-        Biomimicry Switzerland<br />
-        <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">https://biomimicryswitzerland.org</LinkSlide><br />
-        Ask Nature<br />
-        <LinkSlide target="_blank" href="https://asknature.org">https://asknature.org</LinkSlide><br />
-        LearnBiomimicry<br />
-        <LinkSlide target="_blank" href="https://www.learnbiomimicry.com">https://www.learnbiomimicry.com</LinkSlide><br />
-        Systems Innovation<br />
-        <LinkSlide target="_blank" href="https://www.systemsinnovation.io">https://www.systemsinnovation.io</LinkSlide><br />
-        Global Regeneration CoLab<br />
-        <LinkSlide target="_blank" href="https://www.grc.earth">https://www.grc.earth</LinkSlide><br />
-        Complexity Weekend<br />
-        <LinkSlide target="_blank" href="https://www.complexityweekend.com">https://www.complexityweekend.com</LinkSlide><br />
-        ETH Zürich – Systemics Design Labs<br />
-        <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">https://systemicdesignlabs.ethz.ch</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://asknature.org"> Ask Nature</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.learnbiomimicry.com">LearnBiomimicry</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.systemsinnovation.io"> Systems Innovation</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.grc.earth">Global Regeneration CoLab</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
         </>,
         <>
-        Video Biomimicry Switzerland – “My
-        biomimicry journey” <br />
-        <Link target='_blank' href='https://www.youtube.com/watch?v=gsAHHDG1I4Y'>https://www.youtube.com/watch?v=gsAHHDG1I4Y</Link> <br />
-        Video GRC – “Introduction to biomimicry –
-        open discussion” (coming soon)
-        Podcast EEI (coming soon)
-            <br/>
-            GRC WorldWide CoWorking Session zu Biomimikry mit Michaela Emch ": <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>https://youtu.be/2XhlLstMeqI
-        </Link><br/>
-            "Diskussion über GRC Biomimicry" :<Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> https://youtu.be/pDhyCg9RO0E</Link>
-
+            <ul>
+                <li> <Link target='_blank' href='https://www.youtube.com/watch?v=gsAHHDG1I4Y'>
+                    Video Biomimicry Switzerland – “My
+                    biomimicry journey”
+                </Link> </li>
+                <li> <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>GRC WorldWide CoWorking Session on Biomimicry with Michaela Emch
+                </Link></li>
+                <li> <Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> GRC Biomimicry Discussion</Link></li>
+            </ul>
         </>,
         <>
             Eclosions – Marketing &amp; Communication<br />
@@ -261,7 +240,7 @@ const sentencesIn = {
         "Ort",
         "Land",
         "Deine E-Mail",
-        "Senden"
+        "Bestellen Sie das Buch"
     ]
 }
 
@@ -279,7 +258,8 @@ const titleIn = {
 
         "Que pouvez-vous attendre ?",
 
-        <>Qui vous guide ?</>,
+        <><span class="guide">Qui vous guide ?</span><LinkSlide target="_blank"  href={enURL} style={{color: '#e21137', textDecoration: 'none', fontSize: '3rem'}}>Qui vous guide ?</LinkSlide></>,
+
 
         <>Qu'est-ce que la communication <br />bioinfusée ? </>,
 
@@ -290,22 +270,23 @@ const titleIn = {
         "Nouvelles",
 
         "Contact",
+        "Notre écosystème"
     ],
     en: [
         <>
             Dare to engage in <br />
-            <RedText>bioinfused</RedText>  communication!    
+            <RedText>Bioinfused</RedText>  communication!
         </>,
 
         "Marketing & Branding",
 
         <>Training & Teambuilding</>,
 
-        "Translation & cultural adaptation",
+        <>Translation & <br/>Cultural adaptation"</>,
 
         "What can you expect?",
 
-        <>Who guides you?</>,
+        <><span class="guide">Who guides you ?</span><LinkSlide target="_blank"  href={enURL} style={{color: '#e21137', textDecoration: 'none', fontSize: '3rem'}}>Who guides you?</LinkSlide></>,
 
         <>What is it?</>,
 
@@ -317,6 +298,7 @@ const titleIn = {
 
         "Contact",
 
+        "Our ecosystem"
     ],
     du: [
         <span style={{fontSize: "1.6rem"}}>
@@ -331,7 +313,8 @@ const titleIn = {
 
         "Was können Sie erwarten?",
 
-        <>Wer begleitet Sie?</>,
+        <><span class="guide">Wer begleitet Sie?</span><LinkSlide target="_blank"  href={enURL} style={{color: '#e21137', textDecoration: 'none', fontSize: '3rem'}}>Wer begleitet Sie?</LinkSlide></>,
+
 
         <>Was ist bioinfundierte Kommunikation?</>,
 
@@ -342,6 +325,7 @@ const titleIn = {
         "Neuigkeiten",
 
         "Kontakt",
+        "Unser Ökosystem"
 
     ],
 }

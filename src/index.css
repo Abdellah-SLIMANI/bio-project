@@ -1,7 +1,4 @@
-@font-face {
-  font-family: Optima;
-  src: url("../src/fonts/OPTIMA.TTF");
-}
+
 
 @font-face {
   font-family: Amatic;
@@ -118,8 +115,29 @@ body {
   width: 70vw;
   height: auto;
   display: block;
-  font-family: Optima;
+  font-family: Optima, sans-serif;
   background-color: rgba(249, 249, 249, 0.32);
   box-shadow: rgb(0 0 0 / 30%) 0px 0px 10px;
-  color: black;
+  color:  #e21137;
+}
+
+h2.sc-gtsrHT.gfuSqG {
+  color: #e21137;
+}
+
+li.sc-pNWdM.XJxhY{
+  padding: 2%;
+  padding-right: 0px;
+}
+
+.present .guide{
+  display: none;
+}
+
+.past .guide{
+  display: block;
+
+}
+.future .guide {
+  display: block;
 }

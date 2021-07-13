@@ -11,7 +11,29 @@ import { titre, paragraphe } from "./components/lang"
 import OrderBook from './components/OrderBook'
 import Dropdown from 'react-bootstrap/Dropdown'
 import { DropdownButton } from 'react-bootstrap';
+import styled from "styled-components";
+import img from "./img/croix.png"
 
+const Button = styled.a`
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    // position: fixed;
+    z-index: 500;
+    opacity: 0.7;
+    // top: 50%;
+    right: 10px;
+    // transform: translateY(-100%);
+    cursor: pointer;
+    
+    & > img {
+        width: 45%;
+    }
+`
 function App() {
   const [lang, setLang] = React.useState("en");
   return (
@@ -28,6 +50,16 @@ function App() {
           lang={lang}
           handleChange={e => setLang(e.target.value)}
         /> */}
+                  <NavLink>
+                      <Dropdown>
+                          <DropdownButton  key='left' drop='left' title='Languages'>
+                              <Dropdown.Item onClick={()=> setLang('en')}>English</Dropdown.Item>
+                              <Dropdown.Item onClick={()=> setLang('fr')}>Français</Dropdown.Item>
+                              <Dropdown.Item onClick={()=> setLang('du')}>Deutsch</Dropdown.Item>
+                          </DropdownButton>
+                      </Dropdown>
+                  </NavLink>
+
                   <Dropdown>
                       <DropdownButton id="dropdown-basic" key='left' drop='left' title={titre(lang,10)}>
                           <div className='p-3'>
@@ -36,15 +68,7 @@ function App() {
                       </DropdownButton>
                   </Dropdown>
               </NavLink>
-              <NavLink>
-                  <Dropdown>
-                      <DropdownButton id="dropdown-basic" key='left' drop='left' title='Languages'>
-                          <Dropdown.Item onClick={()=> setLang('en')}>English</Dropdown.Item>
-                          <Dropdown.Item onClick={()=> setLang('fr')}>Français</Dropdown.Item>
-                          <Dropdown.Item onClick={()=> setLang('du')}>Deutsch</Dropdown.Item>
-                      </DropdownButton>
-                  </Dropdown>
-              </NavLink>
+
               <NavLink>
                   <Dropdown>
                       <DropdownButton id="dropdown-basic" key='left' drop='left' title='The Book'>
@@ -73,8 +97,12 @@ function App() {
                   </MainSlide>
               </Step>
               <Step x={-360} y={-190} scale={0.07}>
-                  <Slide>
-                      <Title>{titre(lang, 2)}</Title>
+                  <Slide >
+                      <Title>{titre(lang, 2)}</Title>     <Button
+                      href="#/step-1"
+                  >
+                      <img src={img} />
+                  </Button>
                       <Spacing h={3} />
                       <Paragraph>
                           {paragraphe(lang, 1)}
@@ -83,6 +111,11 @@ function App() {
               </Step>
               <Step x={-180} y={-300} scale={0.07}>
                   <Slide>
+                      <Button
+                          href="#/step-1"
+                       style={{float: 'right'}}>
+                          <img src={img} />
+                      </Button>
                       <Title>{titre(lang, 3)}</Title>
                       <Spacing h={3} />
                       <Paragraph>
@@ -92,6 +125,11 @@ function App() {
               </Step>
               <Step x={-50} y={-190} scale={0.07}>
                   <Slide>
+                      <Button
+                          href="#/step-1"
+                          style={{float: 'right'}}>
+                          <img src={img} />
+                      </Button>
                       <Title>{titre(lang, 4)}</Title>
                       <Spacing h={3} />
                       <Paragraph>
@@ -101,6 +139,11 @@ function App() {
               </Step>
               <Step x={-400} y={0} scale={0.07}>
                   <Slide>
+                      <Button
+                          href="#/step-1"
+                          style={{float: 'right'}}>
+                          <img src={img} />
+                      </Button>
                       <Title>{titre(lang, 5)}</Title>
                       <Spacing h={3} />
                       <Paragraph>
@@ -110,10 +153,15 @@ function App() {
               </Step>
               <Step x={-0} y={-50} scale={0.07}>
                   <Slide>
+                      <Button
+                          href="#/step-1"
+                          style={{float: 'right'}}>
+                          <img src={img} />
+                      </Button>
                       <Title>{titre(lang, 6)}</Title>
                       <Spacing h={1} />
                       <FlexDiv>
-                          <img src={portrait} alt='Portrait'/>
+                          <img src={portrait} alt='Portrait' width='40%'/>
                           <Paragraph>
                               {paragraphe(lang, 5)}
                           </Paragraph>
@@ -122,6 +170,11 @@ function App() {
               </Step>
               <Step x={-380} y={230} scale={0.07}>
                   <Slide variant="block">
+                      <Button
+                          href="#/step-1"
+                          style={{float: 'right'}}>
+                          <img src={img} />
+                      </Button>
                       <Title>{titre(lang, 7)}</Title>
                       <Spacing h={3} />
                       <Paragraph>
@@ -131,6 +184,11 @@ function App() {
               </Step>
               <Step x={-200} y={300} scale={0.07}>
                   <Slide variant="block">
+                      <Button
+                          href="#/step-1"
+                          style={{float: 'right'}}>
+                          <img src={img} />
+                      </Button>
                       <Title>{titre(lang, 8)}</Title>
                       <Spacing h={3} />
                       <Paragraph>
@@ -140,10 +198,28 @@ function App() {
               </Step>
               <Step x={-50} y={230} scale={0.07}>
                   <Slide variant="block">
+                      <Button
+                          href="#/step-1"
+                          style={{float: 'right'}}>
+                          <img src={img} />
+                      </Button>
                       <Title>{titre(lang, 9)}</Title>
                       <Spacing h={3} />
                       <Paragraph>
                           {paragraphe(lang, 8)}
+                      </Paragraph>
+                  </Slide>
+              </Step>
+              <Step x={-440} y={120} scale={0.07}>
+                  <Slide variant="transparent">
+                      <Button
+                          href="#/step-1"
+                          style={{float: 'right'}}>
+                          <img src={img} />
+                      </Button>
+                      <Title style={{ margin: "10px 0" }}>{titre(lang, 12)}</Title>
+                      <Paragraph>
+                          {paragraphe(lang,9)}
                       </Paragraph>
                   </Slide>
               </Step>

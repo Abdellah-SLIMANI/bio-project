@@ -6,7 +6,7 @@ const Slide = styled.div`
     width: 68vw;
     height: auto;
     display: block;
-    font-family: Optima;
+    font-family: Optima, sans-serif;
     background-color: #f9f9f952;
     padding-bottom: 10%;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);

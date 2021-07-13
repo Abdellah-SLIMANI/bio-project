@@ -20,8 +20,8 @@ const TreeImage = styled.img`
 `
 
 const MainTitle = styled.h1`
-    font-family: Arial;
-    font-size: 1.6rem;
+    font-family: Optima, sans-serif;
+    font-size: 2rem;
     margin-top: 100px;
     text-align: left;
     color: black;
