@@ -57,7 +57,7 @@ function OrderBook({ lang }) {
     return (
         <>
 
-            <ul>
+            <ul style={{padding: '1rem', paddingInline: '2rem'}}>
                 <li>
                     <Link target='_blank'
                     href={lang === "fr" ? frURL : enURL}

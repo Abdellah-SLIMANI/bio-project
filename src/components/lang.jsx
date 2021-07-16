@@ -25,10 +25,10 @@ const sentencesIn = {
             éthiques, régénératrices et (re)connectantes.
         </>,
         <>
-            <Link target="_blank" href="https://www.linkedin.com/in/michaelaemch/" style={{fontSize: '2rem', color: '#e21137'}}>Michaela Emch</Link>,, spécialiste en communication
+            <Link target="_blank" href="https://www.linkedin.com/in/michaelaemch/" style={{fontSize: '2rem', color: '#e21137'}}>Michaela Emch</Link>, spécialiste en communication
             et praticienne du biomimétisme. Auteur du livre 
             "Vers une communication bioinfusée 
-            – Le Guide pour une Communication 
+            – Le Guide pour une Communication".
         </>,
         <>
             Des solutions de communication humaines basées <br />
@@ -44,7 +44,7 @@ const sentencesIn = {
             En abstrayant le défi que vous souhaitez relever <br />
             et en recherchant dans les formes, processus et <br />
             systèmes naturels la meilleure façon d'atteindre <br />
-            votre objectif (inspiré de la méthodologie du biomimétisme).
+            votre objectif <br/>(inspiré de la méthodologie du biomimétisme).
         </>,
         <>
         <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
@@ -124,7 +124,7 @@ const sentencesIn = {
             By abstracting the challenge you wish to <br />
             address and searching in natural forms, <br />
             processes and systems how best to reach <br />
-            your goal (inspired by the biomimicry methodology).
+            your goal. <br />(inspired by the biomimicry methodology).
         </>,
         <>
             <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
@@ -203,7 +203,7 @@ const sentencesIn = {
             Indem Sie die Herausforderung, die Sie angehen <br />
             möchten, abstrahieren und in natürlichen Formen, <br />
             Prozessen und Systemen suchen, wie Sie Ihr Ziel am <br />
-            besten erreichen können (inspiriert von der Biomimikry-Methodik).
+            besten erreichen können. <br />(inspiriert von der Biomimikry-Methodik).
         </>,
         <>
             <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
@@ -247,12 +247,12 @@ const sentencesIn = {
 const titleIn = {
     fr: [
         <>
-            Osez la communication <br /> <RedText>bioinfusée!</RedText>    
+            Osez la communication <br /> <RedText>bioinfusée</RedText>!
         </>,
 
         "Marketing & Branding",
 
-        <>Formation & Esprit d'équipe</>,
+        <><>Formation &</> <br/> <>Esprit d'équipe</></>,
 
         "Traduction & Adaptation culturelle",
 
@@ -282,7 +282,7 @@ const titleIn = {
 
         <>Training & Teambuilding</>,
 
-        <>Translation & <br/>Cultural adaptation"</>,
+        <>Translation & <br/>Cultural adaptation</>,
 
         "What can you expect?",
 
@@ -290,7 +290,7 @@ const titleIn = {
 
         <>What is it?</>,
 
-        <>Why Bioinfused communication?</>,
+        <>Why bioinfused communication?</>,
 
         "The method",
 

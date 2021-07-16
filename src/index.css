@@ -10,6 +10,11 @@
   src: url("../src/fonts/MYRIADPRO-BOLD.OTF");
 }
 
+
+@font-face {
+  font-family: Optima;
+  src: url("../src/fonts/OPTIMA.TTF");
+}
 body {
     height: 100%;
     background-position: bottom;
@@ -50,6 +55,7 @@ body {
   margin: auto;
   color: black;
   display: flex;
+  
   flex-direction: column; 
   align-items: center;
   justify-content: center;
@@ -94,8 +100,10 @@ body {
   border: none !important;
   text-align: right !important;
   color: black !important;
-  font-family: Myrad;
+  font-family: Optima !important;
+  font-weight: bold !important;
 }
+
 
 .dropdown-menu{
   /* background-color: #f9f9f952 !important; */
@@ -110,6 +118,11 @@ body {
   display: none !important;
 }
 
+.col input{
+  width: inherit;
+}
+
+/* end of bootstrap overwriting*/
 .jvCTkj {
   padding: 1rem 1rem 10%;
   width: 70vw;

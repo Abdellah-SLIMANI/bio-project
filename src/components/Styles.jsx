@@ -21,7 +21,7 @@ const Title = styled.h2`
     font-weight: 400;
     margin-top: 3%;
     text-align: center;
-    font-style: italic;
+    color: #e21137
 `
 
 const Paragraph = styled.p`
@@ -43,12 +43,12 @@ const Spacing = styled.div`
 `
 
 const Link = styled.a`
-    color: red;
+    color: #e21137;
     font-size: 1rem;
 `
 
 const LinkSlide = styled.a`
-    color: red;
+    color: #e21137;
     font-size: 1.5rem;
 `
 
@@ -99,6 +99,29 @@ const FlexDiv = styled.div`
     }
 `
 
+const ExitButton = styled.a`
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    // position: fixed;
+    z-index: 500;
+    opacity: 0.7;
+    // top: 50%;
+    right: 10px;
+    // transform: translateY(-100%);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    
+    & > img {
+        width: 45%;
+    }
+`
+
 
 
 export {
@@ -113,5 +136,6 @@ export {
     NavLink,
     RedText,
     FlexDiv,
-    LinkSlide
+    LinkSlide,
+    ExitButton
 }

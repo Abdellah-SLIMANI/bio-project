@@ -5,7 +5,7 @@ import Step from './components/Step'
 import tree from "./img/tree.png"
 import logo from './img/mainLogo.png'
 import portrait from './img/michaela.jpeg'
-import { Slide, Title, Paragraph, Spacing, NavList,NavLink,FlexDiv} from "./components/Styles"
+import { Slide, Title, Paragraph, Spacing, NavList,NavLink,FlexDiv,ExitButton} from "./components/Styles"
 import { MainSlide, TreeImage, MainTitle,MainLogo} from './components/MainSlide'
 import { titre, paragraphe } from "./components/lang"
 import OrderBook from './components/OrderBook'
@@ -14,26 +14,6 @@ import { DropdownButton } from 'react-bootstrap';
 import styled from "styled-components";
 import img from "./img/croix.png"
 
-const Button = styled.a`
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-    // position: fixed;
-    z-index: 500;
-    opacity: 0.7;
-    // top: 50%;
-    right: 10px;
-    // transform: translateY(-100%);
-    cursor: pointer;
-    
-    & > img {
-        width: 45%;
-    }
-`
 function App() {
   const [lang, setLang] = React.useState("en");
   return (
@@ -98,11 +78,13 @@ function App() {
               </Step>
               <Step x={-360} y={-190} scale={0.07}>
                   <Slide >
-                      <Title>{titre(lang, 2)}</Title>     <Button
+                      <Title>{titre(lang, 2)}</Title>     
+                      <ExitButton
                       href="#/step-1"
+                      style={{float: 'right'}}
                   >
                       <img src={img} />
-                  </Button>
+                  </ExitButton>
                       <Spacing h={3} />
                       <Paragraph>
                           {paragraphe(lang, 1)}
@@ -111,11 +93,11 @@ function App() {
               </Step>
               <Step x={-180} y={-300} scale={0.07}>
                   <Slide>
-                      <Button
+                      <ExitButton
                           href="#/step-1"
-                       style={{float: 'right'}}>
+                        style={{float: 'right'}}>
                           <img src={img} />
-                      </Button>
+                      </ExitButton>
                       <Title>{titre(lang, 3)}</Title>
                       <Spacing h={3} />
                       <Paragraph>
@@ -125,11 +107,11 @@ function App() {
               </Step>
               <Step x={-50} y={-190} scale={0.07}>
                   <Slide>
-                      <Button
+                      <ExitButton
                           href="#/step-1"
                           style={{float: 'right'}}>
                           <img src={img} />
-                      </Button>
+                      </ExitButton>
                       <Title>{titre(lang, 4)}</Title>
                       <Spacing h={3} />
                       <Paragraph>
@@ -139,11 +121,11 @@ function App() {
               </Step>
               <Step x={-400} y={0} scale={0.07}>
                   <Slide>
-                      <Button
+                      <ExitButton
                           href="#/step-1"
                           style={{float: 'right'}}>
                           <img src={img} />
-                      </Button>
+                      </ExitButton>
                       <Title>{titre(lang, 5)}</Title>
                       <Spacing h={3} />
                       <Paragraph>
@@ -153,15 +135,15 @@ function App() {
               </Step>
               <Step x={-0} y={-50} scale={0.07}>
                   <Slide>
-                      <Button
+                      <ExitButton
                           href="#/step-1"
                           style={{float: 'right'}}>
                           <img src={img} />
-                      </Button>
+                      </ExitButton>
                       <Title>{titre(lang, 6)}</Title>
                       <Spacing h={1} />
                       <FlexDiv>
-                          <img src={portrait} alt='Portrait' width='40%'/>
+                          <img src={portrait} alt='Portrait'/>
                           <Paragraph>
                               {paragraphe(lang, 5)}
                           </Paragraph>
@@ -170,11 +152,11 @@ function App() {
               </Step>
               <Step x={-380} y={230} scale={0.07}>
                   <Slide variant="block">
-                      <Button
+                      <ExitButton
                           href="#/step-1"
                           style={{float: 'right'}}>
                           <img src={img} />
-                      </Button>
+                      </ExitButton>
                       <Title>{titre(lang, 7)}</Title>
                       <Spacing h={3} />
                       <Paragraph>
@@ -184,11 +166,11 @@ function App() {
               </Step>
               <Step x={-200} y={300} scale={0.07}>
                   <Slide variant="block">
-                      <Button
+                      <ExitButton
                           href="#/step-1"
                           style={{float: 'right'}}>
                           <img src={img} />
-                      </Button>
+                      </ExitButton>
                       <Title>{titre(lang, 8)}</Title>
                       <Spacing h={3} />
                       <Paragraph>
@@ -198,11 +180,11 @@ function App() {
               </Step>
               <Step x={-50} y={230} scale={0.07}>
                   <Slide variant="block">
-                      <Button
+                      <ExitButton
                           href="#/step-1"
                           style={{float: 'right'}}>
                           <img src={img} />
-                      </Button>
+                      </ExitButton>
                       <Title>{titre(lang, 9)}</Title>
                       <Spacing h={3} />
                       <Paragraph>
@@ -212,11 +194,11 @@ function App() {
               </Step>
               <Step x={-440} y={120} scale={0.07}>
                   <Slide variant="transparent">
-                      <Button
+                      <ExitButton
                           href="#/step-1"
                           style={{float: 'right'}}>
                           <img src={img} />
-                      </Button>
+                      </ExitButton>
                       <Title style={{ margin: "10px 0" }}>{titre(lang, 12)}</Title>
                       <Paragraph>
                           {paragraphe(lang,9)}
