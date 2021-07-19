@@ -92,10 +92,11 @@ const RedText = styled.span`
 
 const FlexDiv = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     & img {
         padding: 2em;
-        width: 35%
+        width: 60%
     }
 `
 

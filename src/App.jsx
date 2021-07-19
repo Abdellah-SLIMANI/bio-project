@@ -5,7 +5,7 @@ import Step from './components/Step'
 import tree from "./img/tree.png"
 import logo from './img/mainLogo.png'
 import portrait from './img/michaela.jpeg'
-import { Slide, Title, Paragraph, Spacing, NavList,NavLink,FlexDiv,ExitButton} from "./components/Styles"
+import { Slide, Title, Paragraph, Spacing, NavList,NavLink,FlexDiv,ExitButton,RedText} from "./components/Styles"
 import { MainSlide, TreeImage, MainTitle,MainLogo} from './components/MainSlide'
 import { titre, paragraphe } from "./components/lang"
 import OrderBook from './components/OrderBook'
@@ -25,11 +25,7 @@ function App() {
                       <MainLogo src={logo} href="#/step-1"/>
                   </a>
               </NavLink>
-              <NavLink>
-                  {/* <SelectLanguage
-          lang={lang}
-          handleChange={e => setLang(e.target.value)}
-        /> */}
+
                   <NavLink>
                       <Dropdown>
                           <DropdownButton  key='left' drop='left' title='Languages'>
@@ -40,6 +36,7 @@ function App() {
                       </Dropdown>
                   </NavLink>
 
+                  <NavLink>
                   <Dropdown>
                       <DropdownButton id="dropdown-basic" key='left' drop='left' title={titre(lang,10)}>
                           <div className='p-3'>
@@ -144,7 +141,7 @@ function App() {
                       <Spacing h={1} />
                       <FlexDiv>
                           <img src={portrait} alt='Portrait'/>
-                          <Paragraph>
+                          <Paragraph style={{textAlign: "center"}}>
                               {paragraphe(lang, 5)}
                           </Paragraph>
                       </FlexDiv>
@@ -226,7 +223,8 @@ function App() {
         </Step> */}
 
           </Impress>
-      </div>
+      </div>    
+      <p style={{fontSize:'12px' , position: 'absolute', bottom: '0', left: '1%'}}>Copyright <a href="#/step-1" style={{cursor: 'pointer', color:"#e21137"}}>Eclosions</a> By <a href='http://www.berexia.com' target='_blank'style={{color:'#005999'}}>Berexia</a></p>
 
     </>
   )

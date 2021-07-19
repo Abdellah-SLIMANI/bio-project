@@ -254,7 +254,8 @@ const titleIn = {
 
         <><>Formation &</> <br/> <>Esprit d'équipe</></>,
 
-        "Traduction & Adaptation culturelle",
+
+    <>Traduction & <br/>Adaptation culturelle</>,
 
         "Que pouvez-vous attendre ?",
 
@@ -263,7 +264,7 @@ const titleIn = {
 
         <>Qu'est-ce que la communication <br />bioinfusée ? </>,
 
-        <>Pourquoi une communication bioinfusée ?</>,
+        <>Pourquoi une communication bioinfusée?</>,
 
         "La méthode",
 
@@ -309,7 +310,7 @@ const titleIn = {
 
         <>Schulung & Teambuilding</>,
 
-        "Übersetzung & kulturelle Anpassung",
+        <>Übersetzung & <br/> kulturelle Anpassung</>,
 
         "Was können Sie erwarten?",
 

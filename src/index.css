@@ -68,7 +68,9 @@ body {
 }
 
 
-.step:not(.active) *{
+.step:not(.active) p,
+.step:not(.active) img,
+.step:not(.active) a{
   display: none;
 }
 
