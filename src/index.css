@@ -55,7 +55,6 @@ body {
   margin: auto;
   color: black;
   display: flex;
-  
   flex-direction: column; 
   align-items: center;
   justify-content: center;
@@ -70,9 +69,12 @@ body {
 
 .step:not(.active) p,
 .step:not(.active) img,
-.step:not(.active) a{
+.step:not(.active) a,
+.step:not(.active) h1
+{
   display: none;
 }
+
 
 .ReactModal__Overlay {
   opacity: 0;

@@ -95,8 +95,7 @@ const FlexDiv = styled.div`
     flex-direction: column;
     align-items: center;
     & img {
-        padding: 2em;
-        width: 60%
+        width: 35%
     }
 `
 
