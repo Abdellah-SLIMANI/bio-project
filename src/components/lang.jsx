@@ -26,7 +26,7 @@ const sentencesIn = {
         </>,
         <>
             <Link target="_blank" href="https://www.linkedin.com/in/michaelaemch/" style={{fontSize: '2rem', color: '#e21137'}}>Michaela Emch</Link>, spécialiste en communication
-            et praticienne du biomimétisme. Auteur du livre 
+            et praticienne du biomimétisme.<br /> Auteur du livre 
             "Vers une communication bioinfusée 
             – Le Guide pour une Communication".
         </>,
@@ -44,7 +44,7 @@ const sentencesIn = {
             En abstrayant le défi que vous souhaitez relever <br />
             et en recherchant dans les formes, processus et <br />
             systèmes naturels la meilleure façon d'atteindre <br />
-            votre objectif <br/>(inspiré de la méthodologie du biomimétisme).
+            votre objectif <br/>(Inspiré de la méthodologie du biomimétisme).
         </>,
         <>
         <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
@@ -81,8 +81,24 @@ const sentencesIn = {
         "Localite",
         "Pays",
         "Votre Email",
-        "Commander le livre"
+        "Commander le livre",
 
+<>
+Vers une communication bioinfusée – le
+            Guide pour une Communication Humaine
+            Inspirée du Biomimétisme au XXIe Siècle <br />Commandez le livre:
+</>,
+//22
+<>
+<br />
+envoyez un message
+            (info@eclosions.ch) avec votre
+            adresse postale afin d'organiser
+            l'envoi et le paiement.</>,
+//23
+<>Version papier<p style={{fontSize: 12}}>Prix pour la version papier: CHF 25.- + frais de port</p></>,
+<>Version électronique (lien vers Amazon)</>,
+<>En savoir plus sur le livre </>
     ],
     en: [
         <>
@@ -106,7 +122,7 @@ const sentencesIn = {
         </>,
         <>
             <Link target="_blank" href="https://www.linkedin.com/in/michaelaemch/" style={{fontSize: '2rem', color: '#e21137'}}>Michaela Emch</Link>, communication specialist
-            and biomimicry  practitioner. Author of the 
+            and biomimicry  practitioner.<br /> Author of the 
             book “From Nature’s Mouth – The Handbook 
             for Bioinfused Human Communication”.
         </>,
@@ -124,7 +140,7 @@ const sentencesIn = {
             By abstracting the challenge you wish to <br />
             address and searching in natural forms, <br />
             processes and systems how best to reach <br />
-            your goal. <br />(inspired by the biomimicry methodology).
+            your goal. <br />(Inspired by the biomimicry methodology).
         </>,
         <>
             <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
@@ -162,6 +178,24 @@ const sentencesIn = {
               "Country",
               "Your Email",
               "Order the book",
+
+               //21
+               <>
+                    From Nature’s Mouth – The Handbook for
+                    Bioinfused Human Communication<br />
+                    Order the Book:
+                    </>,
+                    //22
+                    <>
+                   <br />
+                    please drop a line
+                    (info@eclosions.ch) with your postal
+                    address in order to organize the
+                    shipping and payment.</>,
+              //23
+              <>Paper version <p style={{fontSize: 12}}> Price for paperback: CHF 25.- + shipping</p></>,
+              <>Electronic version (link to Amazon)</>,
+              <>Learn more about the book </>
     ],
     du: [
         <>
@@ -185,7 +219,7 @@ const sentencesIn = {
         </>,
         <>
             <Link target="_blank" href="https://www.linkedin.com/in/michaelaemch/" style={{fontSize: '2rem', color: '#e21137'}}>Michaela Emch</Link>, Kommunikationsspezialistin und
-            Biomimikry-Praktikerin. Autorin des Buches  "From Nature's Mouth
+            Biomimikry-Praktikerin.<br /> Autorin des Buches  "From Nature's Mouth
             - The Handbook for
             Bioinfused Human Communication".
         </>,
@@ -203,7 +237,7 @@ const sentencesIn = {
             Indem Sie die Herausforderung, die Sie angehen <br />
             möchten, abstrahieren und in natürlichen Formen, <br />
             Prozessen und Systemen suchen, wie Sie Ihr Ziel am <br />
-            besten erreichen können. <br />(inspiriert von der Biomimikry-Methodik).
+            besten erreichen können. <br />(Inspiriert von der Biomimikry-Methodik).
         </>,
         <>
             <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
@@ -240,7 +274,25 @@ const sentencesIn = {
         "Ort",
         "Land",
         "Deine E-Mail",
-        "Bestellen Sie das Buch"
+        "Bestellen Sie das Buch",
+        
+
+                       //21
+                       <>
+                       From Nature’s Mouth – The Handbook for
+                        Bioinfused Human Communication<br />
+                       </>,
+                       //22
+                       <>
+                      <br />
+                      bitte schreiben Sie
+        eine Zeile (info@eclosions.ch) mit
+        Ihrer Postadresse, um den Versand
+        und die Bezahlung zu organisieren.</>,
+                 //23
+                 <>Papierversion<p style={{fontSize: 12}}>Preis für die Papierversion: CHF 25 + Porto</p></>,
+                 <>Elektronische Version (link zu Amazon)</>,
+                 <>Lernen Sie mehr über das Buch </>
     ]
 }
 
@@ -271,12 +323,15 @@ const titleIn = {
         "Nouvelles",
 
         "Contact",
-        "Notre écosystème"
+        "Notre écosystème",
+        "Languages",
+        "Le Livre",
+        "Contact"
     ],
     en: [
         <>
             Dare to engage in <br />
-            <RedText>Bioinfused</RedText>  communication!
+            <RedText>bioinfused</RedText>  communication!
         </>,
 
         "Marketing & Branding",
@@ -299,7 +354,10 @@ const titleIn = {
 
         "Contact",
 
-        "Our ecosystem"
+        "Our ecosystem",
+        "Languages",
+        "The Book",
+        "Contact"
     ],
     du: [
         <span style={{fontSize: "1.6rem"}}>
@@ -326,7 +384,10 @@ const titleIn = {
         "Neuigkeiten",
 
         "Kontakt",
-        "Unser Ökosystem"
+        "Unser Ökosystem",
+        "Sprachen",
+        "Das Buch",
+        "Kontakt"
 
     ],
 }

@@ -2,67 +2,25 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Impress from './components/Impress'
 import Step from './components/Step'
-import tree from "./img/tree.png"
-import logo from './img/mainLogo.png'
+import tree from "./img/treee.jpg"
+// import logo from './img/mainLogo.png'
 import portrait from './img/michaela.jpeg'
 import { Slide, Title, Paragraph, Spacing, NavList,NavLink,FlexDiv,ExitButton,RedText} from "./components/Styles"
 import { MainSlide, TreeImage, MainTitle,MainLogo} from './components/MainSlide'
 import { titre, paragraphe } from "./components/lang"
-import OrderBook from './components/OrderBook'
-import Dropdown from 'react-bootstrap/Dropdown'
-import { DropdownButton } from 'react-bootstrap';
-import styled from "styled-components";
+// import OrderBook from './components/OrderBook'
+// import Dropdown from 'react-bootstrap/Dropdown'
+// import { DropdownButton } from 'react-bootstrap';
+// import styled from "styled-components";
 import img from "./img/croix.png"
+import SideNavigation from './components/SideNavigation';
 
 function App() {
   const [lang, setLang] = React.useState("en");
   return (
     <>
       <div style={{display: 'flex', flexDirection: 'column'}}>
-          <NavList>
-              <NavLink>
-                  <a  href="#/step-1">
-                      <MainLogo src={logo} href="#/step-1"/>
-                  </a>
-              </NavLink>
-
-                  <NavLink>
-                      <Dropdown>
-                          <DropdownButton  key='left' drop='left' title='Languages'>
-                              <Dropdown.Item onClick={()=> setLang('en')}>English</Dropdown.Item>
-                              <Dropdown.Item onClick={()=> setLang('fr')}>Français</Dropdown.Item>
-                              <Dropdown.Item onClick={()=> setLang('du')}>Deutsch</Dropdown.Item>
-                          </DropdownButton>
-                      </Dropdown>
-                  </NavLink>
-
-                  <NavLink>
-                  <Dropdown>
-                      <DropdownButton id="dropdown-basic" key='left' drop='left' title={titre(lang,10)}>
-                          <div className='p-3'>
-                              {paragraphe(lang,10)}
-                          </div>
-                      </DropdownButton>
-                  </Dropdown>
-              </NavLink>
-
-              <NavLink>
-                  <Dropdown>
-                      <DropdownButton id="dropdown-basic" key='left' drop='left' title='The Book'>
-                          <OrderBook lang={lang}/>
-                      </DropdownButton>
-                  </Dropdown>
-              </NavLink>
-              <NavLink>
-                  <Dropdown>
-                      <DropdownButton id="dropdown-basic" key='left' drop='left' title='Contact' color='black'>
-                          <div className='px-4'>
-                              {paragraphe(lang,11)}
-                          </div>
-                      </DropdownButton>
-                  </Dropdown>
-              </NavLink>
-          </NavList>
+          <SideNavigation lang={lang} setLang={setLang}/>
           <Impress>
               <Step x={0} y={0}>
                   <MainSlide>
@@ -224,7 +182,7 @@ function App() {
 
           </Impress>
       </div>    
-      <p style={{fontSize:'12px' , position: 'absolute', bottom: '0', left: '1%'}}>Copyright <a href="#/step-1" style={{cursor: 'pointer', color:"#e21137"}}>Eclosions</a> By <a href='http://www.berexia.com' target='_blank'style={{color:'#005999'}}>Berexia</a></p>
+      <p style={{fontSize:'12px' , position: 'absolute', bottom: '0', left: '1%'}}>Copyright <a href="#/step-1" style={{cursor: 'pointer', color:"#e21137"}}>Eclosions</a> By <a href='http://www.berexia.com' target='_blank'style={{color:'#005999'}}>Berexia</a> 2021</p>
 
     </>
   )
