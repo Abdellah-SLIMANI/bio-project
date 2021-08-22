@@ -2,16 +2,11 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Impress from './components/Impress'
 import Step from './components/Step'
-import tree from "./img/treee.jpg"
-// import logo from './img/mainLogo.png'
+import tree from "./img/treee.png"
 import portrait from './img/michaela.jpeg'
 import { Slide, Title, Paragraph, Spacing, NavList,NavLink,FlexDiv,ExitButton,RedText} from "./components/Styles"
 import { MainSlide, TreeImage, MainTitle,MainLogo} from './components/MainSlide'
 import { titre, paragraphe } from "./components/lang"
-// import OrderBook from './components/OrderBook'
-// import Dropdown from 'react-bootstrap/Dropdown'
-// import { DropdownButton } from 'react-bootstrap';
-// import styled from "styled-components";
 import img from "./img/croix.png"
 import SideNavigation from './components/SideNavigation';
 

@@ -126,6 +126,10 @@ body {
   width: inherit;
 }
 
+.modal-content{
+  width: fit-content !important;
+}
+
 /* end of bootstrap overwriting*/
 .jvCTkj {
   padding: 1rem 1rem 10%;

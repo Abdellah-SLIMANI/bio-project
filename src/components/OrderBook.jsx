@@ -1,3 +1,4 @@
+import PDFViewer from 'pdf-viewer-reactjs'
 import React from 'react'
 import styled from "styled-components"
 import bookEn from "../img/booken.jpg"
@@ -5,8 +6,9 @@ import bookFr from "../img/bookfr.jpg"
 import { paragraphe } from './lang'
 import OrderModal from './OrderModal'
 import { Link} from "./Styles"
-// import { Document, Page } from 'react-pdf';
-// import pdf from '../files/pdfE.pdf'
+import { Document, Page } from 'react-pdf';
+import Modal from 'react-bootstrap/Modal'
+import  Button  from 'react-bootstrap/Button'
 
 const frURL = " https://www.amazon.com/Vers-une-Communication-Bioinfusée-Biomimiétisme-ebook/dp/B0916QY7FQ/ref=sr_1_1?dchild=1&keywords=vers+une+communication+bioinfusée&qid=1622468018&s=digital-text&sr=1-1"
 
@@ -56,18 +58,42 @@ const LinksWrapper = styled.div`
         cursor: pointer;
     }
 `
-
-function pdfView(){
-    if(lang === 'fr'){
-
-    }else if(lang==='en'){
-
-    }else{
-
-    }
-}
+  
 function OrderBook({ lang }) {
     const [isOpen, setIsOpen] = React.useState(false);
+    const [isPdfOpen, setIsPdfOpen] = React.useState(false);
+    const [show, setShow] = React.useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    function getPdf(){
+        if(lang === 'en'){
+            return 'files/pdfE.pdf'
+        }else if(lang === 'fr'){
+            return 'files/pdfF.pdf'
+        }
+        return 'files/pdfD.pdf'
+    }
+
+    function ShowPDF() {
+        return (
+          <>
+            <Modal show={show} onHide={handleClose} className='pdfModal'>
+                <Modal.Header closeButton style={{padding: 'none'}}></Modal.Header>
+              <Modal.Body >
+                 <PDFViewer
+                        document={{
+                            url: getPdf(),
+                        }}
+                        hideNavbar= {true}
+                    />
+              </Modal.Body>
+            </Modal>
+          </>
+        );
+      }
+    
+
     return (
         <div style={{display:'flex', flexDirection: 'row', width: '40vw', padding:'2rem'}}>
             <BookCover 
@@ -85,10 +111,14 @@ function OrderBook({ lang }) {
                     <Link onClick={() => setIsOpen(true)}>{paragraphe(lang,23)}</Link>
                 </li>
                 <li>
-                    <Link href='../files/pdfE.pdf' download>{paragraphe(lang,25)}</Link>
+                    <Link onClick={handleShow}>{paragraphe(lang,25)}</Link>
                 </li>
                 <p>{paragraphe(lang,22)}</p>
             </ul>
+            <ShowPDF 
+                show = {handleShow}
+                onHide= {handleClose}
+            />
             <OrderModal 
                 isOpen={isOpen}
                 setIsOpen={setIsOpen}

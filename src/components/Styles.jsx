@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components"
-import bg from "../img/bgFinal.png"
 
 const Slide = styled.div`
     padding: 1rem;
@@ -55,7 +54,6 @@ const LinkSlide = styled.a`
 const Background = styled.div`
     width: 110vw;
     height: 110vh;
-    // background: url(${bg}) no-repeat center center/cover;
     position: absolute;
     top: 50%;
     left: 50%;
