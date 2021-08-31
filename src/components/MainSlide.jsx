@@ -6,6 +6,7 @@ const MainSlide = styled.div`
     width: 85vw;
     height: 80vh;
     position: relative;
+    
 `
 
 const TreeImage = styled.img`
@@ -17,6 +18,10 @@ const TreeImage = styled.img`
     bottom: -10px;
     transform: translate(-0%,-10%);
     float: left;
+    @media screen  and (max-width: 760px){
+        transform: translate(-40%,-10%);
+        height: 120vh;
+    }
 `
 
 const MainTitle = styled.h1`
@@ -25,7 +30,11 @@ const MainTitle = styled.h1`
     margin-top: 100px;
     text-align: left;
     color: black;
-    transform: translate(0,100%)
+    transform: translate(0,100%);
+    @media screen  and (max-width: 760px){
+        transform: translate(-80%,150%);
+        font-size: 3rem;
+    }
 `
 
 const MainSlideContentContainer = styled.div`
@@ -39,6 +48,9 @@ const MainSlideContentContainer = styled.div`
 const MainLogo = styled.img`
     width: auto;
     height: 100px;
+    @media screen  and (max-width: 760px){
+        height: 60px
+    }
 `
 
 export {

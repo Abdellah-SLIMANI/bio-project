@@ -13,6 +13,10 @@ const Slide = styled.div`
     & h2 {
         font-weight: bold;
     }
+    @media screen  and (max-width: 760px){
+        width: 250vw;
+    }
+    
 `
 
 const Title = styled.h2`
@@ -82,6 +86,10 @@ const NavLink = styled.li`
     font-family: Optima;
     font-weight: bold;
     text-align: -webkit-right;
+    @media screen  and (max-width: 760px){
+        padding: 1%;
+        font-size: 8px
+    }
 `
 
 const RedText = styled.span`

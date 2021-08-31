@@ -6,6 +6,7 @@
     "start": "vite preview --host --port 6500"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
     "bootstrap": "^4.6.0",
     "impress.js": "^1.1.0",
     "pdf-viewer-reactjs": "^2.2.3",

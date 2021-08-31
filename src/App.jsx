@@ -9,17 +9,159 @@ import { MainSlide, TreeImage, MainTitle,MainLogo} from './components/MainSlide'
 import { titre, paragraphe } from "./components/lang"
 import img from "./img/croix.png"
 import SideNavigation from './components/SideNavigation';
+import { useMediaQuery, useTheme } from '@material-ui/core';
 
 function App() {
   const [lang, setLang] = React.useState("en");
+  const theme = useTheme()
+  const isMdScreen = useMediaQuery(theme.breakpoints.down('sm'))
+  console.log(isMdScreen , useMediaQuery(theme.breakpoints.down('sm')))
   return (
     <>
       <div style={{display: 'flex', flexDirection: 'column'}}>
           <SideNavigation lang={lang} setLang={setLang}/>
-          <Impress>
-              <Step x={0} y={0}>
+          { isMdScreen ? <Impress>
+          <Step x={0} y={0}>
                   <MainSlide>
-                      {/* <Background /> */}
+                      <TreeImage src={tree} alt="main image" />
+                      <MainTitle>
+                          {titre(lang, 1)}
+                      </MainTitle>
+                  </MainSlide>
+              </Step>
+              <Step x={-250} y={-600} scale={0.07}>
+                  <Slide >
+                      <Title>{titre(lang, 2)}</Title>     
+                      <ExitButton
+                      href="#/step-1"
+                      style={{float: 'right'}}
+                  >
+                      <img src={img} />
+                  </ExitButton>
+                      <Spacing h={3} />
+                      <Paragraph>
+                          {paragraphe(lang, 1)}
+                      </Paragraph>
+                  </Slide>
+              </Step>
+              <Step x={-250} y={-450} scale={0.07}>
+                  <Slide>
+                      <ExitButton
+                          href="#/step-1"
+                        style={{float: 'right'}}>
+                          <img src={img} />
+                      </ExitButton>
+                      <Title>{titre(lang, 3)}</Title>
+                      <Spacing h={3} />
+                      <Paragraph>
+                          {paragraphe(lang, 2)}
+                      </Paragraph>
+                  </Slide>
+              </Step>
+              <Step x={-250} y={-300} scale={0.07}>
+                  <Slide>
+                      <ExitButton
+                          href="#/step-1"
+                          style={{float: 'right'}}>
+                          <img src={img} />
+                      </ExitButton>
+                      <Title>{titre(lang, 4)}</Title>
+                      <Spacing h={3} />
+                      <Paragraph>
+                          {paragraphe(lang, 3)}
+                      </Paragraph>
+                  </Slide>
+              </Step>
+              <Step x={-250} y={-150} scale={0.07}>
+                  <Slide>
+                      <ExitButton
+                          href="#/step-1"
+                          style={{float: 'right'}}>
+                          <img src={img} />
+                      </ExitButton>
+                      <Title>{titre(lang, 5)}</Title>
+                      <Spacing h={3} />
+                      <Paragraph>
+                          {paragraphe(lang, 4)}
+                      </Paragraph>
+                  </Slide>
+              </Step>
+              <Step x={-250} y={0} scale={0.07}>
+                  <Slide>
+                      <ExitButton
+                          href="#/step-1"
+                          style={{float: 'right'}}>
+                          <img src={img} />
+                      </ExitButton>
+                      <Title>{titre(lang, 6)}</Title>
+                      <Spacing h={1} />
+                      <FlexDiv>
+                          <img src={portrait} alt='Portrait'/>
+                          <Paragraph style={{textAlign: "center"}}>
+                              {paragraphe(lang, 5)}
+                          </Paragraph>
+                      </FlexDiv>
+                  </Slide>
+              </Step>
+              <Step x={-250} y={150} scale={0.07}>
+                  <Slide variant="block">
+                      <ExitButton
+                          href="#/step-1"
+                          style={{float: 'right'}}>
+                          <img src={img} />
+                      </ExitButton>
+                      <Title>{titre(lang, 7)}</Title>
+                      <Spacing h={3} />
+                      <Paragraph>
+                          {paragraphe(lang, 6)}
+                      </Paragraph>
+                  </Slide>
+              </Step>
+              <Step x={-250} y={300} scale={0.07}>
+                  <Slide variant="block">
+                      <ExitButton
+                          href="#/step-1"
+                          style={{float: 'right'}}>
+                          <img src={img} />
+                      </ExitButton>
+                      <Title>{titre(lang, 8)}</Title>
+                      <Spacing h={3} />
+                      <Paragraph>
+                          {paragraphe(lang, 7)}
+                      </Paragraph>
+                  </Slide>
+              </Step>
+              <Step x={-250} y={450} scale={0.07}>
+                  <Slide variant="block">
+                      <ExitButton
+                          href="#/step-1"
+                          style={{float: 'right'}}>
+                          <img src={img} />
+                      </ExitButton>
+                      <Title>{titre(lang, 9)}</Title>
+                      <Spacing h={3} />
+                      <Paragraph>
+                          {paragraphe(lang, 8)}
+                      </Paragraph>
+                  </Slide>
+              </Step>
+              <Step x={-250} y={600} scale={0.07}>
+                  <Slide variant="transparent">
+                      <ExitButton
+                          href="#/step-1"
+                          style={{float: 'right'}}>
+                          <img src={img} />
+                      </ExitButton>
+                      <Title style={{ margin: "10px 0" }}>{titre(lang, 12)}</Title>
+                      <Paragraph>
+                          {paragraphe(lang,9)}
+                      </Paragraph>
+                  </Slide>
+              </Step>
+              </Impress>
+            :<Impress> 
+             <Step x={0} y={0}>
+                  <MainSlide>
                       <TreeImage src={tree} alt="main image" />
                       <MainTitle>
                           {titre(lang, 1)}
@@ -175,7 +317,7 @@ function App() {
           </Slide>
         </Step> */}
 
-          </Impress>
+          </Impress> }
       </div>    
       <p style={{fontSize:'12px' , position: 'absolute', bottom: '0', left: '1%'}}>Copyright <a href="#/step-1" style={{cursor: 'pointer', color:"#e21137"}}>Eclosions</a> By <a href='http://www.berexia.com' target='_blank'style={{color:'#005999'}}>Berexia</a> 2021</p>
 

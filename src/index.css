@@ -60,6 +60,12 @@ body {
   justify-content: center;
 }
 
+@media screen  and (max-width: 760px){
+  .step:not(.active):not(.step:first-child) h2{
+    transform: scale(5);
+  }
+}
+
 .step:not(.active):not(.step:first-child) h2:hover{
   background: rgb(229,235,246);
   transform: scale(2.7);
