@@ -48,6 +48,10 @@ const Spacing = styled.div`
 const Link = styled.a`
     color: #e21137;
     font-size: 1rem;
+
+    @media screen  and (max-width: 760px){
+        font-size: 10px;
+    }
 `
 
 const LinkSlide = styled.a`
@@ -77,8 +81,15 @@ const NavList = styled.ul`
     top: 0;
     right: 3%;
     list-style: none;
-    text-align: right;
+    text-align: -webkit-right;
     align-items: right;
+    font-size: 8px;
+    z-Index: 1000;
+    
+    @media screen  and (max-width: 760px){
+        width: min-content;
+        z-Index: 1000
+    }
 `
 
 const NavLink = styled.li`
@@ -86,9 +97,10 @@ const NavLink = styled.li`
     font-family: Optima;
     font-weight: bold;
     text-align: -webkit-right;
+    width: fit-content;
+
     @media screen  and (max-width: 760px){
-        padding: 1%;
-        font-size: 8px
+        padding: 0%;
     }
 `
 

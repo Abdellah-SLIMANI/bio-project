@@ -15,7 +15,6 @@ function App() {
   const [lang, setLang] = React.useState("en");
   const theme = useTheme()
   const isMdScreen = useMediaQuery(theme.breakpoints.down('sm'))
-  console.log(isMdScreen , useMediaQuery(theme.breakpoints.down('sm')))
   return (
     <>
       <div style={{display: 'flex', flexDirection: 'column'}}>
@@ -29,7 +28,7 @@ function App() {
                       </MainTitle>
                   </MainSlide>
               </Step>
-              <Step x={-250} y={-600} scale={0.07}>
+              <Step x={-350} y={300} scale={0.07}>
                   <Slide >
                       <Title>{titre(lang, 2)}</Title>     
                       <ExitButton
@@ -44,7 +43,7 @@ function App() {
                       </Paragraph>
                   </Slide>
               </Step>
-              <Step x={-250} y={-450} scale={0.07}>
+              <Step x={-350} y={450} scale={0.07}>
                   <Slide>
                       <ExitButton
                           href="#/step-1"
@@ -58,7 +57,7 @@ function App() {
                       </Paragraph>
                   </Slide>
               </Step>
-              <Step x={-250} y={-300} scale={0.07}>
+              <Step x={-350} y={600} scale={0.07}>
                   <Slide>
                       <ExitButton
                           href="#/step-1"
@@ -72,7 +71,7 @@ function App() {
                       </Paragraph>
                   </Slide>
               </Step>
-              <Step x={-250} y={-150} scale={0.07}>
+              <Step x={-350} y={-150} scale={0.07}>
                   <Slide>
                       <ExitButton
                           href="#/step-1"
@@ -86,7 +85,7 @@ function App() {
                       </Paragraph>
                   </Slide>
               </Step>
-              <Step x={-250} y={0} scale={0.07}>
+              <Step x={-350} y={0} scale={0.07}>
                   <Slide>
                       <ExitButton
                           href="#/step-1"
@@ -103,7 +102,7 @@ function App() {
                       </FlexDiv>
                   </Slide>
               </Step>
-              <Step x={-250} y={150} scale={0.07}>
+              <Step x={-350} y={-600} scale={0.07}>
                   <Slide variant="block">
                       <ExitButton
                           href="#/step-1"
@@ -117,7 +116,7 @@ function App() {
                       </Paragraph>
                   </Slide>
               </Step>
-              <Step x={-250} y={300} scale={0.07}>
+              <Step x={-350} y={-450} scale={0.07}>
                   <Slide variant="block">
                       <ExitButton
                           href="#/step-1"
@@ -131,7 +130,7 @@ function App() {
                       </Paragraph>
                   </Slide>
               </Step>
-              <Step x={-250} y={450} scale={0.07}>
+              <Step x={-350} y={-300} scale={0.07}>
                   <Slide variant="block">
                       <ExitButton
                           href="#/step-1"
@@ -145,7 +144,7 @@ function App() {
                       </Paragraph>
                   </Slide>
               </Step>
-              <Step x={-250} y={600} scale={0.07}>
+              <Step x={-350} y={150} scale={0.07}>
                   <Slide variant="transparent">
                       <ExitButton
                           href="#/step-1"
@@ -319,7 +318,7 @@ function App() {
 
           </Impress> }
       </div>    
-      <p style={{fontSize:'12px' , position: 'absolute', bottom: '0', left: '1%'}}>Copyright <a href="#/step-1" style={{cursor: 'pointer', color:"#e21137"}}>Eclosions</a> By <a href='http://www.berexia.com' target='_blank'style={{color:'#005999'}}>Berexia</a> 2021</p>
+      <p style={{fontSize:'12px' , position: 'absolute', bottom: '0', left: '1%'}} className='footerText'>Copyright <a href="#/step-1" style={{cursor: 'pointer', color:"#e21137"}}>Eclosions</a> By <a href='http://www.berexia.com' target='_blank'style={{color:'gray'}}>Berexia</a> 2021</p>
 
     </>
   )

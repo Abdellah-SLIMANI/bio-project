@@ -19,8 +19,8 @@ const TreeImage = styled.img`
     transform: translate(-0%,-10%);
     float: left;
     @media screen  and (max-width: 760px){
-        transform: translate(-40%,-10%);
-        height: 120vh;
+        transform: translate(-20%,-30%);
+        height: 180vh;
     }
 `
 
@@ -32,7 +32,7 @@ const MainTitle = styled.h1`
     color: black;
     transform: translate(0,100%);
     @media screen  and (max-width: 760px){
-        transform: translate(-80%,150%);
+        transform: translate(-100%,260%);
         font-size: 3rem;
     }
 `
@@ -49,7 +49,8 @@ const MainLogo = styled.img`
     width: auto;
     height: 100px;
     @media screen  and (max-width: 760px){
-        height: 60px
+        height: 60px;
+        transform: translate(17%,0)
     }
 `
 

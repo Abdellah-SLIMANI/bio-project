@@ -30,7 +30,12 @@ const Grid = styled.div`
 const BookCover = styled.img`
     width: auto;
     margin: auto;
-    padding-inline: 1rem
+    padding-inline: 1rem;
+
+    @media screen  and (max-width: 760px){
+        display: none;
+        padding: 0;
+    }
 `
 
 const LinksWrapper = styled.div`
@@ -95,13 +100,21 @@ function OrderBook({ lang }) {
     
 
     return (
-        <div style={{display:'flex', flexDirection: 'row', width: '40vw', padding:'2rem'}}>
+        <div style={{display:'flex', flexDirection: 'row', padding:'2rem', width: '45vw'}} className= 'noPadding'>
             <BookCover 
                 src={lang === "en" ? bookEn : bookFr}
             />
             
             <ul>
             <p>{paragraphe(lang,21)}</p>
+
+            <li>
+                <Link onClick={handleShow}>{paragraphe(lang,25)}</Link>
+            </li>
+            <br/>
+            <p>{paragraphe(lang,26)}</p>
+
+
                 <li>
                     <Link target='_blank'
                     href={lang === "fr" ? frURL : enURL}
@@ -110,10 +123,8 @@ function OrderBook({ lang }) {
                 <li>
                     <Link onClick={() => setIsOpen(true)}>{paragraphe(lang,23)}</Link>
                 </li>
-                <li>
-                    <Link onClick={handleShow}>{paragraphe(lang,25)}</Link>
-                </li>
-                <p>{paragraphe(lang,22)}</p>
+
+                {/* <p>{paragraphe(lang,22)}</p> */}
             </ul>
             <ShowPDF 
                 show = {handleShow}

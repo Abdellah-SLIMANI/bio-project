@@ -17,7 +17,7 @@ export default function SideNavigation({lang,setLang}) {
               </NavLink>
 
                   <NavLink>
-                      <Dropdown>
+                      <Dropdown className= 'dropDwonResponsivness'>
                           <DropdownButton  key='left' drop='left' title={titre(lang,13)}>
                               <Dropdown.Item onClick={()=> setLang('en')}>English</Dropdown.Item>
                               <Dropdown.Item onClick={()=> setLang('fr')}>Français</Dropdown.Item>
@@ -27,7 +27,7 @@ export default function SideNavigation({lang,setLang}) {
                   </NavLink>
 
                   <NavLink>
-                  <Dropdown>
+                  <Dropdown className= 'dropDwonResponsivness'>
                       <DropdownButton id="dropdown-basic" key='left' drop='left' title={titre(lang,10)}>
                           <div className='p-3'>
                               {paragraphe(lang,10)}
@@ -37,14 +37,14 @@ export default function SideNavigation({lang,setLang}) {
               </NavLink>
 
               <NavLink>
-                  <Dropdown>
+                  <Dropdown className= 'dropDwonResponsivness'>
                       <DropdownButton id="dropdown-basic" key='left' drop='left' title={titre(lang,14)}>
                           <OrderBook lang={lang}/>
                       </DropdownButton>
                   </Dropdown>
               </NavLink>
               <NavLink>
-                  <Dropdown>
+                  <Dropdown className= 'dropDwonResponsivness'>
                       <DropdownButton id="dropdown-basic" key='left' drop='left' title={titre(lang,15)} color='black'>
                           <div className='px-4'>
                               {paragraphe(lang,11)}

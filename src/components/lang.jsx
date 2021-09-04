@@ -4,6 +4,9 @@ const frURL = " https://www.amazon.com/Vers-une-Communication-Bioinfusée-Biomim
 
 const enURL = "https://www.amazon.com/gp/product/B08WLTXRZS?pf_rd_r=WCC1QFVM4MGYSSVFBXQJ&pf_rd_p=5ae2c7f8-e0c6-4f35-9071-dc3240e894a8&pd_rd_r=8c85bc34-4f39-41d0-9bf7-a0c2cdc367e6&pd_rd_w=23yoe&pd_rd_wg=WcEBq&ref_=pd_gw_unk"
 
+const open = true;
+
+
 const sentencesIn = {
     fr: [
         <>
@@ -27,8 +30,10 @@ const sentencesIn = {
         <>
             <Link target="_blank" href="https://www.linkedin.com/in/michaelaemch/" style={{fontSize: '2rem', color: '#e21137'}}>Michaela Emch</Link>, spécialiste en communication
             et praticienne du biomimétisme.<br /> Auteur du livre 
-            "Vers une communication bioinfusée 
-            – Le Guide pour une Communication".
+            "Vers une
+            communication bioinfusée – Le Guide pour
+            une Communication Humaine Inspirée du
+            Biomimétisme au XXIe Siècle".
         </>,
         <>
             Des solutions de communication humaines basées <br />
@@ -54,6 +59,7 @@ const sentencesIn = {
         <LinkSlide target="_blank" href="https://www.grc.earth">Global Regeneration CoLab</LinkSlide><br />
         <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
         <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
+        <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
 </>,
         <>
             <ul>
@@ -84,9 +90,9 @@ const sentencesIn = {
         "Commander le livre",
 
 <>
-Vers une communication bioinfusée – le
+            Vers une communication bioinfusée – le
             Guide pour une Communication Humaine
-            Inspirée du Biomimétisme au XXIe Siècle <br />Commandez le livre:
+            Inspirée du Biomimétisme au XXIe Siècle <br />
 </>,
 //22
 <>
@@ -96,9 +102,11 @@ envoyez un message
             adresse postale afin d'organiser
             l'envoi et le paiement.</>,
 //23
-<>Version papier<p style={{fontSize: 12}}>Prix pour la version papier: CHF 25.- + frais de port</p></>,
-<>Version électronique (lien vers Amazon)</>,
-<>En savoir plus sur le livre </>
+<>Version papier<p style={{fontSize: 12}} className='fontReduced'>Prix pour la version papier: CHF 25.- + frais de port</p></>,
+<>Version électronique</>,
+<>En savoir plus sur le livre </>,
+<>Commandez le livre:</>
+
     ],
     en: [
         <>
@@ -150,6 +158,7 @@ envoyez un message
             <LinkSlide target="_blank" href="https://www.grc.earth">Global Regeneration CoLab</LinkSlide><br />
             <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
             <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
         </>,
         <>
             <ul>
@@ -182,8 +191,7 @@ envoyez un message
                //21
                <>
                     From Nature’s Mouth – The Handbook for
-                    Bioinfused Human Communication<br />
-                    Order the Book:
+                    Bioinfused Human Communication<br /> 
                     </>,
                     //22
                     <>
@@ -193,9 +201,11 @@ envoyez un message
                     address in order to organize the
                     shipping and payment.</>,
               //23
-              <>Paper version <p style={{fontSize: 12}}> Price for paperback: CHF 25.- + shipping</p></>,
-              <>Electronic version (link to Amazon)</>,
-              <>Learn more about the book </>
+              <>Paper version <p style={{fontSize: 12}} className='fontReduced'> Price for paperback: CHF 25.- + shipping</p></>,
+              <>Electronic version</>,
+              <>Learn more about the book </>,
+              //27 
+              <><p>Order the Book:</p> </>
     ],
     du: [
         <>
@@ -247,6 +257,7 @@ envoyez un message
             <LinkSlide target="_blank" href="https://www.grc.earth">Global Regeneration CoLab</LinkSlide><br />
             <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
             <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
         </>,
         <>
             <ul>
@@ -280,7 +291,7 @@ envoyez un message
                        //21
                        <>
                        From Nature’s Mouth – The Handbook for
-                        Bioinfused Human Communication<br />
+                        Bioinfused Human Communication (Buch auf Englisch)<br />
                        </>,
                        //22
                        <>
@@ -290,9 +301,10 @@ envoyez un message
         Ihrer Postadresse, um den Versand
         und die Bezahlung zu organisieren.</>,
                  //23
-                 <>Papierversion<p style={{fontSize: 12}}>Preis für die Papierversion: CHF 25 + Porto</p></>,
-                 <>Elektronische Version (link zu Amazon)</>,
-                 <>Lernen Sie mehr über das Buch </>
+                 <>Papierversion<p style={{fontSize: 12}} className='fontReduced'>Preis für die Papierversion: CHF 25 + Porto</p></>,
+                 <>Elektronische Version</>,
+                 <>Lernen Sie mehr über das Buch </>,
+                 <>Bestellen Sie das Buch:</>
     ]
 }
 
@@ -325,13 +337,13 @@ const titleIn = {
         "Contact",
         "Notre écosystème",
         "Languages",
-        "Le Livre",
+        "Le livre",
         "Contact"
     ],
     en: [
         <>
-            Dare to engage in <br />
-            <RedText>bioinfused</RedText>  communication!
+            Dare to engage in <br/>
+            <RedText> bioinfused</RedText>  communication!
         </>,
 
         "Marketing & Branding",
@@ -356,13 +368,14 @@ const titleIn = {
 
         "Our ecosystem",
         "Languages",
-        "The Book",
+        "The book",
         "Contact"
     ],
     du: [
-        <span style={{fontSize: "1.6rem"}}>
-            Trauen Sie sich an die <br /><RedText>bioinfundierte</RedText> Kommunikation heran!  
-        </span>,
+        <p style={{transform: 'translate(-0,-100%)'}}>
+            Trauen Sie sich an die 
+            <br /><RedText>bioinfundierte</RedText> Kommunikation heran!  
+        </p>,
 
         "Marketing & Branding",
 
