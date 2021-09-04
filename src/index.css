@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: Optima;
-  src: url("../src/fonts/Optima_Italic.ttf");
+  src: url("../src/fonts/Optima\ Medium.ttf");
 }
 
 body {
@@ -181,8 +181,8 @@ li.sc-pNWdM.XJxhY{
   }
 
   canvas{
-    width: 100%
-  }
+  width: 100%
+}
 
   .dropdown-menu{
     width: 65vw;

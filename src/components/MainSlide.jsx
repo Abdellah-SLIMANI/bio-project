@@ -20,7 +20,7 @@ const TreeImage = styled.img`
     float: left;
     @media screen  and (max-width: 760px){
         transform: translate(-20%,-30%);
-        height: 180vh;
+        height: 160%;
     }
 `
 
@@ -32,7 +32,7 @@ const MainTitle = styled.h1`
     color: black;
     transform: translate(0,100%);
     @media screen  and (max-width: 760px){
-        transform: translate(-100%,260%);
+        transform: translate(-100%,200%);
         font-size: 3rem;
     }
 `
