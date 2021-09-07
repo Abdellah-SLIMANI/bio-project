@@ -84,11 +84,10 @@ const NavList = styled.ul`
     text-align: -webkit-right;
     align-items: right;
     font-size: 8px;
-    z-Index: 1000;
     
     @media screen  and (max-width: 760px){
         width: min-content;
-        z-Index: 1000
+
     }
 `
 

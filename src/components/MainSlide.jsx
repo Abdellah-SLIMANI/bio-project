@@ -32,17 +32,9 @@ const MainTitle = styled.h1`
     color: black;
     transform: translate(0,100%);
     @media screen  and (max-width: 760px){
-        transform: translate(-100%,200%);
+        transform: translate(-120%,200%);
         font-size: 3rem;
     }
-`
-
-const MainSlideContentContainer = styled.div`
-    // display: flex;
-    // flex-direction: column;
-    // transform: translate(35%, 120%);
-    // width: fit-content;
-    // float: right;
 `
 
 const MainLogo = styled.img`
@@ -59,5 +51,4 @@ export {
     TreeImage,
     MainTitle,
     MainLogo,
-    MainSlideContentContainer,
 }

@@ -1,5 +1,4 @@
-import React from 'react'
-// import Modal from "react-modal";
+import React, { useEffect,useRef } from 'react'
 import Modal from 'react-bootstrap/Modal'
 import styled from 'styled-components';
 import { paragraphe } from './lang';
@@ -7,13 +6,6 @@ import {ExitButton} from '../components/Styles';
 import img from "../img/croix.png"
 import { Col, ModalBody, Row } from 'react-bootstrap';
 import ModalHeader from 'react-bootstrap/esm/ModalHeader';
-
-const Title = styled.h2`
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 3rem;
-`
 
 const Form = styled.form`
     font-family: Arial, Helvetica, sans-serif;
@@ -45,13 +37,59 @@ const Button = styled.button`
 `
 
 function OrderModal({ isOpen, setIsOpen, lang }) {
+    const refs= {
+        name: useRef(),
+        first_name: useRef(),
+        adresse: useRef(),
+        postal_code: useRef(),
+        city: useRef(),
+        coutry: useRef(),
+        email: useRef()
+    };
+
+    const preventDefaultBehavior = (event) => {
+        event.preventDefault();
+        event.returnValue = false;
+        event.cancelBubble = true;
+        console.log(event)
+    }
+    const normalFaultyKeys= {
+        "b": 66,
+        "p": 80,
+        " ": 32,
+        "." : 190,
+    }
+    const faultyEventKeys = {
+        'up': 38,
+        "down": 40,
+        "left": 37,
+        "right": 39,
+        "tab": 9,
+    }
+
+    const allFaultyKeys = {
+        ...normalFaultyKeys,
+        ...faultyEventKeys
+    }
+    useEffect(() => {
+            Object.keys(refs).map(ref => {
+                refs[ref].current && refs[ref].current.addEventListener('keyup' , (event)=>{
+                    Object.keys(allFaultyKeys).map(faultyKey => {
+                        if(event.keyCode == normalFaultyKeys[faultyKey]){
+                            preventDefaultBehavior(event)
+                            refs[ref].current.value =  refs[ref].current.value + faultyKey
+                        }else if (event.keyCode == faultyEventKeys[faultyKey]){
+                            preventDefaultBehavior(event)
+                        }
+                    })
+                })
+            }) 
+    },[refs])
+
     return (
         <Modal 
         show={isOpen}
         onHide={() => setIsOpen(false)}
-        closeTimeoutMS={300}
-        backdrop="static"
-        keyboard={false}
         >
             <ModalHeader  style={{padding: '1.5rem'}}>
             <ExitButton
@@ -62,34 +100,34 @@ function OrderModal({ isOpen, setIsOpen, lang }) {
                   </ExitButton>
             </ModalHeader>
                   <ModalBody>
-                  <Form>
+                  <Form style={{margin: '4rem'}}>
                 <Row>
                     <Col>
                     <Label>{ paragraphe(lang, 13) }</Label>
-                <Input type="text" />
+                <Input type="text"  ref ={refs.name}/>
                 </Col>
                 <Col>
                 <Label>{ paragraphe(lang, 14) }</Label>
-                <Input type="text" />
+                <Input type="text"  ref ={refs.first_name}/>
                 </Col>
                 </Row>
 
                 <Label>{ paragraphe(lang, 15) }</Label>
-                <Input type="text" />
+                <Input type="text" id='third' ref ={refs.adresse}/>
                 <Label>{ paragraphe(lang, 16) }</Label>
-                <Input type="number" />
+                <Input type="number" id='fourth' ref ={refs.postal_code}/>
                 <Row>
                     <Col>
                     <Label>{ paragraphe(lang, 17) }</Label>
-                <Input type="text" />
+                <Input type="text" id='fifth' ref ={refs.city}/>
                     </Col>
                     <Col>
                     <Label>{ paragraphe(lang, 18) }</Label>
-                <Input type="text" />
+                <Input type="text" id='sixth' ref ={refs.coutry}/>
                     </Col>
                 </Row>
                 <Label>{ paragraphe(lang, 19) }</Label>
-                <Input type="email" />
+                <Input type="email" id='seventh' ref ={refs.email}/>
                 <Button type="submit" >{ paragraphe(lang, 20) }</Button>
             </Form>
                   </ModalBody>

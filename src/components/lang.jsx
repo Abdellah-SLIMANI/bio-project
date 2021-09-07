@@ -92,20 +92,20 @@ const sentencesIn = {
 <>
             Vers une communication bioinfusée – le
             Guide pour une Communication Humaine
-            Inspirée du Biomimétisme au XXIe Siècle <br />
-</>,
-//22
-<>
-<br />
-envoyez un message
-            (info@eclosions.ch) avec votre
-            adresse postale afin d'organiser
-            l'envoi et le paiement.</>,
-//23
-<>Version papier<p style={{fontSize: 12}} className='fontReduced'>Prix pour la version papier: CHF 25.- + frais de port</p></>,
-<>Version électronique</>,
-<>En savoir plus sur le livre </>,
-<>Commandez le livre:</>
+                Inspirée du Biomimétisme au XXIe Siècle <br />
+            </>,
+            //22
+            <>
+            <br />
+            envoyez un message
+                        (info@eclosions.ch) avec votre
+                        adresse postale afin d'organiser
+                        l'envoi et le paiement.</>,
+            //23
+            <>Version papier<p style={{fontSize: 12}} className='fontReduced'>Prix pour la version papier: CHF 25.- + frais de port</p></>,
+            <>Version électronique</>,
+            <>En savoir plus sur le livre </>,
+            <>Commandez le livre:</>
 
     ],
     en: [
@@ -372,7 +372,7 @@ const titleIn = {
         "Contact"
     ],
     du: [
-        <p style={{transform: 'translate(-0,-100%)'}}>
+        <p style={{transform: 'translate(0,-50%)'}}>
             Trauen Sie sich an die 
             <br /><RedText>bioinfundierte</RedText> Kommunikation heran!  
         </p>,
