@@ -205,7 +205,7 @@ const sentencesIn = {
               <>Electronic version</>,
               <>Learn more about the book </>,
               //27 
-              <><p>Order the Book:</p> </>
+              <>Order the Book:</>
     ],
     du: [
         <>
@@ -323,7 +323,7 @@ const titleIn = {
 
         "Que pouvez-vous attendre ?",
 
-        <><span class="guide">Qui vous guide ?</span><LinkSlide target="_blank"  href={enURL} style={{color: '#e21137', textDecoration: 'none', fontSize: '3rem'}}>Qui vous guide ?</LinkSlide></>,
+        <><span className="guide">Qui vous guide ?</span><LinkSlide target="_blank"  href={enURL} style={{color: '#e21137', textDecoration: 'none', fontSize: '3rem'}}>Qui vous guide ?</LinkSlide></>,
 
 
         <>Qu'est-ce que la communication <br />bioinfusée ? </>,
@@ -354,7 +354,7 @@ const titleIn = {
 
         "What can you expect?",
 
-        <><span class="guide">Who guides you ?</span><LinkSlide target="_blank"  href={enURL} style={{color: '#e21137', textDecoration: 'none', fontSize: '3rem'}}>Who guides you?</LinkSlide></>,
+        <><span className="guide">Who guides you ?</span><LinkSlide target="_blank"  href={enURL} style={{color: '#e21137', textDecoration: 'none', fontSize: '3rem'}}>Who guides you?</LinkSlide></>,
 
         <>What is it?</>,
 
@@ -385,7 +385,7 @@ const titleIn = {
 
         "Was können Sie erwarten?",
 
-        <><span class="guide">Wer begleitet Sie?</span><LinkSlide target="_blank"  href={enURL} style={{color: '#e21137', textDecoration: 'none', fontSize: '3rem'}}>Wer begleitet Sie?</LinkSlide></>,
+        <><span className="guide">Wer begleitet Sie?</span><LinkSlide target="_blank"  href={enURL} style={{color: '#e21137', textDecoration: 'none', fontSize: '3rem'}}>Wer begleitet Sie?</LinkSlide></>,
 
 
         <>Was ist bioinfundierte Kommunikation?</>,

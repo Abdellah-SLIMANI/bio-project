@@ -116,22 +116,22 @@ function OrderModal({ isOpen, setIsOpen, lang }) {
                 </Row>
 
                 <Label>{ paragraphe(lang, 15) }</Label>
-                <Input type="text" id='third' ref ={refs.adresse}/>
+                <Input type="text" ref ={refs.adresse}/>
                 <Label>{ paragraphe(lang, 16) }</Label>
-                <Input type="number" id='fourth' ref ={refs.postal_code}/>
+                <Input type="number"  ref ={refs.postal_code}/>
                 <Row>
                     <Col>
                     <Label>{ paragraphe(lang, 17) }</Label>
-                <Input type="text" id='fifth' ref ={refs.city}/>
+                <Input type="text" ref ={refs.city}/>
                     </Col>
                     <Col>
                     <Label>{ paragraphe(lang, 18) }</Label>
-                <Input type="text" id='sixth' ref ={refs.coutry}/>
+                <Input type="text" ref ={refs.coutry}/>
                     </Col>
                 </Row>
                 <Label>{ paragraphe(lang, 19) }</Label>
-                <Input type="email" id='seventh' ref ={refs.email}/>
-                <Button type="submit" >{ paragraphe(lang, 20) }</Button>
+                <Input type="email" ref ={refs.email}/>
+                <Button type="submit">{ paragraphe(lang, 20) }</Button>
             </Form>
                   </ModalBody>
         </Modal>

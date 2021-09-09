@@ -41,7 +41,7 @@ function OrderBook({ lang }) {
             <ul>
             <p>{paragraphe(lang,21)}</p>
             <li>
-                <Link href={getPdf()} download>{paragraphe(lang,25)}</Link>
+                <Link href={getPdf()} target="_blank">{paragraphe(lang,25)}</Link>
             </li>
             <br/>
             <p>{paragraphe(lang,26)}</p>
