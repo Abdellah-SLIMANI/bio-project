@@ -126,9 +126,8 @@ function App() {
       >
           Eclosions
           </a> By <a href='http://www.berexia.com' target='_blank'style={{color:'gray'}}>
-              Berexia
-            </a> 
-            2021
+              Berexia 
+            </a> 2021
         </p>
     </>
   )

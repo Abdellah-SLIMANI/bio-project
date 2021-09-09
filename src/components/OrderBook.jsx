@@ -1,4 +1,3 @@
-import PDFViewer from 'pdf-viewer-reactjs'
 import React from 'react'
 import styled from "styled-components"
 import bookEn from "../img/booken.jpg"
@@ -6,7 +5,7 @@ import bookFr from "../img/bookfr.jpg"
 import { paragraphe } from './lang'
 import OrderModal from './OrderModal'
 import { Link} from "./Styles"
-import Modal from 'react-bootstrap/Modal'
+
 
 const frURL = " https://www.amazon.com/Vers-une-Communication-Bioinfusée-Biomimiétisme-ebook/dp/B0916QY7FQ/ref=sr_1_1?dchild=1&keywords=vers+une+communication+bioinfusée&qid=1622468018&s=digital-text&sr=1-1"
 
@@ -25,40 +24,14 @@ const BookCover = styled.img`
   
 function OrderBook({ lang }) {
     const [isOpen, setIsOpen] = React.useState(false);
-    const [show, setShow] = React.useState(false);
-    const handleClose = () => {
-        setShow(false)
-    };
-    const handleShow = () => {
-        setShow(true)
-    };
-
     function getPdf(){
         if(lang === 'en'){
-            return 'files/pdfE.pdf'
+            return "files/From Nature's Mouth - Michaela Emch.pdf"
         }else if(lang === 'fr'){
-            return 'files/pdfF.pdf'
+            return "files/Vers une Communication Bioinfusée - Michaela Emch.pdf"
         }
-        return 'files/pdfD.pdf'
+        return "files/From Nature's Mouth - Michaela Emch .pdf"
     }
-
-    function ShowPDF() {
-        return (
-          <>
-            <Modal show={show} onHide={handleClose} className='pdfModal'>
-                <Modal.Header closeButton style={{padding: 'none'}}></Modal.Header>
-              <Modal.Body >
-                 <PDFViewer
-                        document={{
-                            url: getPdf(),
-                        }}
-                        hideNavbar= {true}
-                    />
-              </Modal.Body>
-            </Modal>
-          </>
-        );
-      }
 
     return (
         <div style={{display:'flex', flexDirection: 'row', padding:'2rem', width: '45vw'}} className= 'noPadding'>
@@ -68,7 +41,7 @@ function OrderBook({ lang }) {
             <ul>
             <p>{paragraphe(lang,21)}</p>
             <li>
-                <Link onClick={handleShow} target='_blank'>{paragraphe(lang,25)}</Link>
+                <Link href={getPdf()} download>{paragraphe(lang,25)}</Link>
             </li>
             <br/>
             <p>{paragraphe(lang,26)}</p>
@@ -81,10 +54,6 @@ function OrderBook({ lang }) {
                     <Link onClick={() => setIsOpen(true)}>{paragraphe(lang,23)}</Link>
                 </li>
             </ul>
-            <ShowPDF 
-                show = {handleShow}
-                onHide= {handleClose}
-            />
             <OrderModal 
                 isOpen={isOpen}
                 setIsOpen={setIsOpen}

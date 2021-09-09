@@ -49,7 +49,7 @@ const sentencesIn = {
             En abstrayant le défi que vous souhaitez relever <br />
             et en recherchant dans les formes, processus et <br />
             systèmes naturels la meilleure façon d'atteindre <br />
-            votre objectif <br/>(Inspiré de la méthodologie du biomimétisme).
+            votre objectif. <br/>(Inspiré de la méthodologie du biomimétisme).
         </>,
         <>
         <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
@@ -381,7 +381,7 @@ const titleIn = {
 
         <>Schulung & Teambuilding</>,
 
-        <>Übersetzung & <br/> kulturelle Anpassung</>,
+        <>Übersetzung & <br/> Kulturelle Anpassung</>,
 
         "Was können Sie erwarten?",
 
@@ -393,9 +393,7 @@ const titleIn = {
         <> Warum bioinfundierte Kommunikation?</>,
 
         "Die Methode",
-
         "Neuigkeiten",
-
         "Kontakt",
         "Unser Ökosystem",
         "Sprachen",

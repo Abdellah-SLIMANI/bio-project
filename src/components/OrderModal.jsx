@@ -74,12 +74,15 @@ function OrderModal({ isOpen, setIsOpen, lang }) {
     useEffect(() => {
             Object.keys(refs).map(ref => {
                 refs[ref].current && refs[ref].current.addEventListener('keyup' , (event)=>{
-                    Object.keys(allFaultyKeys).map(faultyKey => {
+                    Object.keys(normalFaultyKeys).map(faultyKey => {
                         if(event.keyCode == normalFaultyKeys[faultyKey]){
                             preventDefaultBehavior(event)
                             refs[ref].current.value =  refs[ref].current.value + faultyKey
-                        }else if (event.keyCode == faultyEventKeys[faultyKey]){
-                            preventDefaultBehavior(event)
+                        }
+                        else {
+                            Object.keys(faultyEventKeys).map(faultyKey => {
+                                preventDefaultBehavior(event)
+                            })
                         }
                     })
                 })
