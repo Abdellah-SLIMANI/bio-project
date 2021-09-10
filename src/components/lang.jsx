@@ -105,7 +105,8 @@ const sentencesIn = {
             <>Version papier<p style={{fontSize: 12}} className='fontReduced'>Prix pour la version papier: CHF 25.- + frais de port</p></>,
             <>Version électronique</>,
             <>En savoir plus sur le livre </>,
-            <>Commandez le livre:</>
+            <>Commandez le livre:</>,
+            <>Langue du livre</>
 
     ],
     en: [
@@ -205,7 +206,8 @@ const sentencesIn = {
               <>Electronic version</>,
               <>Learn more about the book </>,
               //27 
-              <>Order the Book:</>
+              <>Order the Book:</>,
+              <>Language of the book</>
     ],
     du: [
         <>
@@ -304,7 +306,8 @@ const sentencesIn = {
                  <>Papierversion<p style={{fontSize: 12}} className='fontReduced'>Preis für die Papierversion: CHF 25 + Porto</p></>,
                  <>Elektronische Version</>,
                  <>Lernen Sie mehr über das Buch </>,
-                 <>Bestellen Sie das Buch:</>
+                 <>Bestellen Sie das Buch:</>,
+                 <>Sprache des Buches</>
     ]
 }
 

@@ -6,6 +6,7 @@ import {ExitButton} from '../components/Styles';
 import img from "../img/croix.png"
 import { Col, ModalBody, Row } from 'react-bootstrap';
 import ModalHeader from 'react-bootstrap/esm/ModalHeader';
+import emailjs from 'emailjs-com'
 
 const Form = styled.form`
     font-family: Arial, Helvetica, sans-serif;
@@ -34,6 +35,13 @@ const Button = styled.button`
     color: white;
     border: none;
     background-color: #e21137;
+`
+const Select = styled.select`
+padding: 10px;
+margin-bottom: 1rem;
+border: 1px solid #a0a0a0;
+border-radius: 10px;
+outline: none;
 `
 
 function OrderModal({ isOpen, setIsOpen, lang }) {
@@ -67,10 +75,27 @@ function OrderModal({ isOpen, setIsOpen, lang }) {
         "tab": 9,
     }
 
-    const allFaultyKeys = {
-        ...normalFaultyKeys,
-        ...faultyEventKeys
-    }
+    // const handleSubmit = () => {
+    //     const email = {}
+    //     Object.keys(refs).map(ref =>(
+    //         email[ref] = refs[ref].current.value
+    //     ))
+    //     console.log("EMAIL",email)
+    // }
+
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_p5zvkks', 'template_o7c4jjk', e.target, 'user_jdAMs3lyhqSaicXvmkoZS')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
+      }
+    
+
     useEffect(() => {
             Object.keys(refs).map(ref => {
                 refs[ref].current && refs[ref].current.addEventListener('keyup' , (event)=>{
@@ -103,37 +128,42 @@ function OrderModal({ isOpen, setIsOpen, lang }) {
                   </ExitButton>
             </ModalHeader>
                   <ModalBody>
-                  <Form style={{margin: '4rem'}}>
+                  <Form style={{margin: '4rem'}} onSubmit= {sendEmail}>
                 <Row>
                     <Col>
                     <Label>{ paragraphe(lang, 13) }</Label>
-                <Input type="text"  ref ={refs.name}/>
+                <Input type="text"  ref ={refs.name} name='name'/>
                 </Col>
                 <Col>
                 <Label>{ paragraphe(lang, 14) }</Label>
-                <Input type="text"  ref ={refs.first_name}/>
+                <Input type="text"  ref ={refs.first_name} name='first_name'/>
                 </Col>
                 </Row>
 
                 <Label>{ paragraphe(lang, 15) }</Label>
-                <Input type="text" ref ={refs.adresse}/>
+                <Input type="text" ref ={refs.adresse} name='adresse'/>
                 <Label>{ paragraphe(lang, 16) }</Label>
-                <Input type="number"  ref ={refs.postal_code}/>
+                <Input type="number"  ref ={refs.postal_code} name='postal_code'/>
+                <Label>{ paragraphe(lang, 27) }</Label>
+                <Select id="cars" name='language'>
+                    <option value="français">Français</option>
+                    <option value="english">English</option>
+                </Select>
                 <Row>
                     <Col>
                     <Label>{ paragraphe(lang, 17) }</Label>
-                <Input type="text" ref ={refs.city}/>
+                <Input type="text" ref ={refs.city} name='city'/>
                     </Col>
                     <Col>
                     <Label>{ paragraphe(lang, 18) }</Label>
-                <Input type="text" ref ={refs.coutry}/>
+                <Input type="text" ref ={refs.coutry} name='country'/>
                     </Col>
                 </Row>
                 <Label>{ paragraphe(lang, 19) }</Label>
-                <Input type="email" ref ={refs.email}/>
+                <Input type="email" ref ={refs.email} name='email' required/>
                 <Button type="submit">{ paragraphe(lang, 20) }</Button>
             </Form>
-                  </ModalBody>
+            </ModalBody>
         </Modal>
     )
 }
