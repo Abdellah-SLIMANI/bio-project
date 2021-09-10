@@ -144,11 +144,6 @@ function OrderModal({ isOpen, setIsOpen, lang }) {
                 <Input type="text" ref ={refs.adresse} name='adresse'/>
                 <Label>{ paragraphe(lang, 16) }</Label>
                 <Input type="number"  ref ={refs.postal_code} name='postal_code'/>
-                <Label>{ paragraphe(lang, 27) }</Label>
-                <Select id="cars" name='language'>
-                    <option value="français">Français</option>
-                    <option value="english">English</option>
-                </Select>
                 <Row>
                     <Col>
                     <Label>{ paragraphe(lang, 17) }</Label>
@@ -161,6 +156,11 @@ function OrderModal({ isOpen, setIsOpen, lang }) {
                 </Row>
                 <Label>{ paragraphe(lang, 19) }</Label>
                 <Input type="email" ref ={refs.email} name='email' required/>
+                <Label>{ paragraphe(lang, 27) }</Label>
+                <Select id="cars" name='language'>
+                    <option value="français">Français</option>
+                    <option value="english">English</option>
+                </Select>
                 <Button type="submit">{ paragraphe(lang, 20) }</Button>
             </Form>
             </ModalBody>

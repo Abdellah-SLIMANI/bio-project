@@ -16,8 +16,7 @@ function App() {
   const scale = 0.07;
   const theme = useTheme()
   const isMdScreen = useMediaQuery(theme.breakpoints.down('md'))
-  const isSmScreen = useMediaQuery(theme.breakpoints.down('sm'))
-
+  
   const steps = [
     {
       x: isMdScreen ?-350 : -360,
