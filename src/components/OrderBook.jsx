@@ -26,11 +26,11 @@ function OrderBook({ lang }) {
     const [isOpen, setIsOpen] = React.useState(false);
     function getPdf(){
         if(lang === 'en'){
-            return "../../public/files/From Nature's Mouth - Michaela Emch.pdf"
+            return "/files/From Nature's Mouth - Michaela Emch.pdf"
         }else if(lang === 'fr'){
-            return "../../public/files/Vers une Communication Bioinfusée - Michaela Emch.pdf"
+            return "/files/Vers une Communication Bioinfusée - Michaela Emch.pdf"
         }
-        return "../../public/files/From Nature's Mouth - Michaela Emch D.pdf"
+        return "/files/From Nature's Mouth - Michaela Emch D.pdf"
     }
 
     return (
