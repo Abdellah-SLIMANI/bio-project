@@ -139,6 +139,53 @@ const ExitButton = styled.a`
     }
 `
 
+const BookCover = styled.img`
+    width: auto;
+    margin: auto;
+    padding-inline: 1rem;
+
+    @media screen  and (max-width: 760px){
+        display: none;
+        padding: 0;
+    }
+`
+
+const Form = styled.form`
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+`
+
+const Label = styled.label`
+    margin-bottom: 8px;
+`
+
+const Input = styled.input`
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #a0a0a0;
+    border-radius: 10px;
+    outline: none;
+`
+
+const Button = styled.button`
+    padding: 9px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: #e21137;
+`
+const Select = styled.select`
+padding: 10px;
+margin-bottom: 1rem;
+border: 1px solid #a0a0a0;
+border-radius: 10px;
+outline: none;
+`
+
 
 
 export {
@@ -154,5 +201,11 @@ export {
     RedText,
     FlexDiv,
     LinkSlide,
-    ExitButton
+    ExitButton,
+    BookCover,
+    Label,
+    Input,
+    Form,
+    Button,
+    Select
 }
