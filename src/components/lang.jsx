@@ -60,6 +60,7 @@ const sentencesIn = {
         <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
         <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
         <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
+        <LinkSlide target="_blank" href="www.signa-terre.ch">Signa-Terre</LinkSlide><br />
 </>,
         <>
             <ul>
@@ -70,6 +71,7 @@ const sentencesIn = {
                 <li> <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>GRC WorldWide CoWorking Session on Biomimicry with Michaela Emch
                 </Link></li>
                 <li> <Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> GRC Biomimicry Discussion</Link></li>
+                <li> <Link target='_blank' href='https://electricperspectives.podbean.com/e/018-global-circuit-strengthening-communications-using-biomimicry/'> Electric Perspectives Podcast - Strengthening Communications Using Biomimicry</Link></li>
             </ul>
         </>,
         <>
@@ -160,6 +162,7 @@ const sentencesIn = {
             <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
             <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
             <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
+            <LinkSlide target="_blank" href="www.signa-terre.ch">Signa-Terre</LinkSlide><br />
         </>,
         <>
             <ul>
@@ -170,6 +173,7 @@ const sentencesIn = {
                 <li> <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>GRC WorldWide CoWorking Session on Biomimicry with Michaela Emch
                 </Link></li>
                 <li> <Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> GRC Biomimicry Discussion</Link></li>
+                <li> <Link target='_blank' href='https://electricperspectives.podbean.com/e/018-global-circuit-strengthening-communications-using-biomimicry/'> Electric Perspectives Podcast - Strengthening Communications Using Biomimicry</Link></li>
             </ul>
         </>,
         <>
@@ -260,6 +264,7 @@ const sentencesIn = {
             <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
             <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
             <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
+            <LinkSlide target="_blank" href="www.signa-terre.ch">Signa-Terre</LinkSlide><br />
         </>,
         <>
             <ul>
@@ -270,6 +275,7 @@ const sentencesIn = {
                 <li> <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>GRC WorldWide CoWorking Session on Biomimicry with Michaela Emch
                 </Link></li>
                 <li> <Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> GRC Biomimicry Discussion</Link></li>
+                <li> <Link target='_blank' href='https://electricperspectives.podbean.com/e/018-global-circuit-strengthening-communications-using-biomimicry/'> Electric Perspectives Podcast - Strengthening Communications Using Biomimicry</Link></li>
             </ul>
         </>,
         <>
@@ -339,7 +345,7 @@ const titleIn = {
 
         "Contact",
         "Notre écosystème",
-        "Languages",
+        "Langues",
         "Le livre",
         "Contact"
     ],
