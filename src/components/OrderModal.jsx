@@ -1,48 +1,13 @@
 import React, { useEffect,useRef } from 'react'
 import Modal from 'react-bootstrap/Modal'
-import styled from 'styled-components';
 import { paragraphe } from './lang';
-import {ExitButton} from '../components/Styles';
+import {ExitButton , Form, Input, Button, Select ,Label} from '../components/Styles';
 import img from "../img/croix.png"
 import { Col, ModalBody, Row } from 'react-bootstrap';
 import ModalHeader from 'react-bootstrap/esm/ModalHeader';
 import emailjs from 'emailjs-com'
-
-const Form = styled.form`
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 500px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-`
-
-const Label = styled.label`
-    margin-bottom: 8px;
-`
-
-const Input = styled.input`
-    padding: 10px;
-    margin-bottom: 1rem;
-    border: 1px solid #a0a0a0;
-    border-radius: 10px;
-    outline: none;
-`
-
-const Button = styled.button`
-    padding: 9px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    border: none;
-    background-color: #e21137;
-`
-const Select = styled.select`
-padding: 10px;
-margin-bottom: 1rem;
-border: 1px solid #a0a0a0;
-border-radius: 10px;
-outline: none;
-`
+import {preventDefaultBehavior} from '../utils/utils'
+import {normalFaultyKeys, faultyEventKeys} from '../utils/constants'
 
 function OrderModal({ isOpen, setIsOpen, lang }) {
     const refs= {
@@ -55,33 +20,7 @@ function OrderModal({ isOpen, setIsOpen, lang }) {
         email: useRef()
     };
 
-    const preventDefaultBehavior = (event) => {
-        event.preventDefault();
-        event.returnValue = false;
-        event.cancelBubble = true;
-        console.log(event)
-    }
-    const normalFaultyKeys= {
-        "b": 66,
-        "p": 80,
-        " ": 32,
-        "." : 190,
-    }
-    const faultyEventKeys = {
-        'up': 38,
-        "down": 40,
-        "left": 37,
-        "right": 39,
-        "tab": 9,
-    }
 
-    // const handleSubmit = () => {
-    //     const email = {}
-    //     Object.keys(refs).map(ref =>(
-    //         email[ref] = refs[ref].current.value
-    //     ))
-    //     console.log("EMAIL",email)
-    // }
 
     function sendEmail(e) {
         e.preventDefault();

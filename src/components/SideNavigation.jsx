@@ -8,6 +8,33 @@ import OrderBook from './OrderBook';
 import logo from '../img/mainLogo.png'
 
 export default function SideNavigation({lang,setLang}) {
+
+    const navItems = [
+        {
+            title: titre(lang,13),
+            content: <>
+                        <Dropdown.Item onClick={()=> setLang('en')}>English</Dropdown.Item>
+                         <Dropdown.Item onClick={()=> setLang('fr')}>Français</Dropdown.Item>
+                      <Dropdown.Item onClick={()=> setLang('du')}>Deutsch</Dropdown.Item>
+                </>
+        },
+        {
+            title: titre(lang,10),
+            content:<div className='p-3'>
+                    {paragraphe(lang,10)}
+                    </div>
+        },
+        {
+            title: titre(lang,14),
+            content: <OrderBook lang={lang}/>
+        },
+        {
+            title: titre(lang,15),
+            content: <div className='px-4'>
+            {paragraphe(lang,11)}
+                </div>
+        },
+    ]
     return (
             <NavList>
               <NavLink>
@@ -15,43 +42,17 @@ export default function SideNavigation({lang,setLang}) {
                       <MainLogo src={logo} href="#/step-1"/>
                   </a>
               </NavLink>
-
-                  <NavLink>
-                      <Dropdown className= 'dropDwonResponsivness'>
-                          <DropdownButton  key='left' drop='left' title={titre(lang,13)}>
-                              <Dropdown.Item onClick={()=> setLang('en')}>English</Dropdown.Item>
-                              <Dropdown.Item onClick={()=> setLang('fr')}>Français</Dropdown.Item>
-                              <Dropdown.Item onClick={()=> setLang('du')}>Deutsch</Dropdown.Item>
-                          </DropdownButton>
-                      </Dropdown>
-                  </NavLink>
-
-                  <NavLink>
-                  <Dropdown className= 'dropDwonResponsivness'>
-                      <DropdownButton id="dropdown-basic" key='left' drop='left' title={titre(lang,10)}>
-                          <div className='p-3'>
-                              {paragraphe(lang,10)}
-                          </div>
-                      </DropdownButton>
-                  </Dropdown>
-              </NavLink>
-
-              <NavLink>
-                  <Dropdown className= 'dropDwonResponsivness'>
-                      <DropdownButton id="dropdown-basic" key='left' drop='left' title={titre(lang,14)}>
-                          <OrderBook lang={lang}/>
-                      </DropdownButton>
-                  </Dropdown>
-              </NavLink>
-              <NavLink>
-                  <Dropdown className= 'dropDwonResponsivness'>
-                      <DropdownButton id="dropdown-basic" key='left' drop='left' title={titre(lang,15)} color='black'>
-                          <div className='px-4'>
-                              {paragraphe(lang,11)}
-                          </div>
-                      </DropdownButton>
-                  </Dropdown>
-              </NavLink>
+              {
+                  navItems.map(item => ( 
+                    <NavLink>
+                        <Dropdown className= 'dropDwonResponsivness'>
+                            <DropdownButton  key='left' drop='left' title={item.title}>
+                                {item.content}
+                            </DropdownButton>
+                        </Dropdown>
+                    </NavLink>
+                  ))
+              }
           </NavList>
     )
 }

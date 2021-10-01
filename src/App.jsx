@@ -16,7 +16,6 @@ function App() {
   const scale = 0.07;
   const theme = useTheme()
   const isMdScreen = useMediaQuery(theme.breakpoints.down('md'))
-  
   const steps = [
     {
       x: isMdScreen ?-350 : -360,
@@ -67,7 +66,6 @@ function App() {
     paragraphe: paragraphe(lang, 9)
 },
 ]
-
 
   return (
     <>
