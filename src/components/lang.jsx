@@ -60,7 +60,7 @@ const sentencesIn = {
         <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
         <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
         <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
-        <LinkSlide target="_blank" href="www.signa-terre.ch">Signa-Terre</LinkSlide><br />
+        <LinkSlide target="_blank" href="https://www.signa-terre.ch">Signa-Terre</LinkSlide><br />
 </>,
         <>
             <ul>
@@ -162,7 +162,7 @@ const sentencesIn = {
             <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
             <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
             <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
-            <LinkSlide target="_blank" href="www.signa-terre.ch">Signa-Terre</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.signa-terre.ch">Signa-Terre</LinkSlide><br />
         </>,
         <>
             <ul>
@@ -264,7 +264,7 @@ const sentencesIn = {
             <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
             <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
             <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
-            <LinkSlide target="_blank" href="www.signa-terre.ch">Signa-Terre</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.signa-terre.ch">Signa-Terre</LinkSlide><br />
         </>,
         <>
             <ul>
