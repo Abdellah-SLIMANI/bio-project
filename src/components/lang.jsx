@@ -108,8 +108,7 @@ const sentencesIn = {
             <>Version électronique</>,
             <>En savoir plus sur le livre </>,
             <>Commandez le livre:</>,
-            <>Langue du livre</>
-
+            <>Langue du livre</>,
     ],
     en: [
         <>
@@ -381,7 +380,7 @@ const titleIn = {
         "Contact"
     ],
     du: [
-        <p style={{transform: 'translate(0,-50%)'}}>
+        <p style={{transform: 'translate(40%,-50%)'}}>
             Trauen Sie sich an die 
             <br /><RedText>bioinfundierte</RedText> Kommunikation heran!  
         </p>,
