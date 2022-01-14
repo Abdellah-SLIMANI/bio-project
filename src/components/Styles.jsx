@@ -100,6 +100,9 @@ const NavLink = styled.li`
 
     @media screen  and (max-width: 760px){
         padding: 0%;
+        &:last-child {
+            margin-top: 10%;
+        }
     }
 `
 
