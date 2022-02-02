@@ -87,22 +87,18 @@ const NavList = styled.ul`
     
     @media screen  and (max-width: 760px){
         width: min-content;
-
     }
 `
 
 const NavLink = styled.li`
-    padding: 5%;
+    padding: 2%;
     font-family: Optima;
     font-weight: bold;
     text-align: -webkit-right;
     width: fit-content;
 
-    @media screen  and (max-width: 760px){
-        padding: 0%;
-        &:last-child {
-            margin-top: 10%;
-        }
+    &:last-child {
+        margin-top: 15%;
     }
 `
 

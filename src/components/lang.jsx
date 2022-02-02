@@ -52,15 +52,16 @@ const sentencesIn = {
             votre objectif. <br/>(Inspiré de la méthodologie du biomimétisme).
         </>,
         <>
-        <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
-        <LinkSlide target="_blank" href="https://asknature.org"> Ask Nature</LinkSlide><br />
-        <LinkSlide target="_blank" href="https://www.learnbiomimicry.com">LearnBiomimicry</LinkSlide><br />
-        <LinkSlide target="_blank" href="https://www.systemsinnovation.io"> Systems Innovation</LinkSlide><br />
-        <LinkSlide target="_blank" href="https://www.grc.earth">Global Regeneration CoLab</LinkSlide><br />
-        <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
-        <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
-        <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
-        <LinkSlide target="_blank" href="https://www.signa-terre.ch">Signa-Terre</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://asknature.org"> Ask Nature</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.bornglobalfoundation.org">Born Global Foundation</LinkSlide>
+            <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.grc.earth">Global Regeneration CoLab</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.learnbiomimicry.com">LearnBiomimicry</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.signa-terre.ch">Signa-Terre</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.systemsinnovation.io"> Systems Innovation</LinkSlide><br />
 </>,
         <>
             <ul>
@@ -72,6 +73,7 @@ const sentencesIn = {
                 </Link></li>
                 <li> <Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> GRC Biomimicry Discussion</Link></li>
                 <li> <Link target='_blank' href='https://electricperspectives.podbean.com/e/018-global-circuit-strengthening-communications-using-biomimicry/'> Electric Perspectives Podcast - Strengthening Communications Using Biomimicry</Link></li>
+                <li> <Link target='_blank' href='https://youtu.be/MtnUB_Mw3tg'> What is biomimicry in 2 minutes (from Biomimicry Switzerland’s webinar)</Link></li>
             </ul>
         </>,
         <>
@@ -153,15 +155,16 @@ const sentencesIn = {
             your goal. <br />(Inspired by the biomimicry methodology).
         </>,
         <>
-            <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
             <LinkSlide target="_blank" href="https://asknature.org"> Ask Nature</LinkSlide><br />
-            <LinkSlide target="_blank" href="https://www.learnbiomimicry.com">LearnBiomimicry</LinkSlide><br />
-            <LinkSlide target="_blank" href="https://www.systemsinnovation.io"> Systems Innovation</LinkSlide><br />
-            <LinkSlide target="_blank" href="https://www.grc.earth">Global Regeneration CoLab</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.bornglobalfoundation.org">Born Global Foundation</LinkSlide>
             <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
             <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
             <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.grc.earth">Global Regeneration CoLab</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.learnbiomimicry.com">LearnBiomimicry</LinkSlide><br />
             <LinkSlide target="_blank" href="https://www.signa-terre.ch">Signa-Terre</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.systemsinnovation.io"> Systems Innovation</LinkSlide><br />
         </>,
         <>
             <ul>
@@ -173,6 +176,7 @@ const sentencesIn = {
                 </Link></li>
                 <li> <Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> GRC Biomimicry Discussion</Link></li>
                 <li> <Link target='_blank' href='https://electricperspectives.podbean.com/e/018-global-circuit-strengthening-communications-using-biomimicry/'> Electric Perspectives Podcast - Strengthening Communications Using Biomimicry</Link></li>
+                <li> <Link target='_blank' href='https://youtu.be/MtnUB_Mw3tg'> What is biomimicry in 2 minutes (from Biomimicry Switzerland’s webinar)</Link></li>
             </ul>
         </>,
         <>
@@ -254,16 +258,17 @@ const sentencesIn = {
             Prozessen und Systemen suchen, wie Sie Ihr Ziel am <br />
             besten erreichen können. <br />(Inspiriert von der Biomimikry-Methodik).
         </>,
-        <>
-            <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
+        <>            
             <LinkSlide target="_blank" href="https://asknature.org"> Ask Nature</LinkSlide><br />
-            <LinkSlide target="_blank" href="https://www.learnbiomimicry.com">LearnBiomimicry</LinkSlide><br />
-            <LinkSlide target="_blank" href="https://www.systemsinnovation.io"> Systems Innovation</LinkSlide><br />
-            <LinkSlide target="_blank" href="https://www.grc.earth">Global Regeneration CoLab</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.bornglobalfoundation.org">Born Global Foundation</LinkSlide>
             <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
             <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
             <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.grc.earth">Global Regeneration CoLab</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.learnbiomimicry.com">LearnBiomimicry</LinkSlide><br />
             <LinkSlide target="_blank" href="https://www.signa-terre.ch">Signa-Terre</LinkSlide><br />
+            <LinkSlide target="_blank" href="https://www.systemsinnovation.io"> Systems Innovation</LinkSlide><br />
         </>,
         <>
             <ul>
@@ -275,6 +280,7 @@ const sentencesIn = {
                 </Link></li>
                 <li> <Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> GRC Biomimicry Discussion</Link></li>
                 <li> <Link target='_blank' href='https://electricperspectives.podbean.com/e/018-global-circuit-strengthening-communications-using-biomimicry/'> Electric Perspectives Podcast - Strengthening Communications Using Biomimicry</Link></li>
+                <li> <Link target='_blank' href='https://youtu.be/MtnUB_Mw3tg'> What is biomimicry in 2 minutes (from Biomimicry Switzerland’s webinar)</Link></li>
             </ul>
         </>,
         <>
