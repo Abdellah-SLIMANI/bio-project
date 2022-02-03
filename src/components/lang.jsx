@@ -54,7 +54,7 @@ const sentencesIn = {
         <>
             <LinkSlide target="_blank" href="https://asknature.org"> Ask Nature</LinkSlide><br />
             <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
-            <LinkSlide target="_blank" href="https://www.bornglobalfoundation.org">Born Global Foundation</LinkSlide>
+            <LinkSlide target="_blank" href="https://www.bornglobalfoundation.org">Born Global Foundation</LinkSlide><br />
             <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
             <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
             <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
@@ -65,14 +65,14 @@ const sentencesIn = {
 </>,
         <>
             <ul>
+            <li> <Link target='_blank' href='https://electricperspectives.podbean.com/e/018-global-circuit-strengthening-communications-using-biomimicry/'> Electric Perspectives Podcast - Strengthening Communications Using Biomimicry</Link></li>
+            <li> <Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> GRC Biomimicry Discussion</Link></li>
+            <li> <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>GRC WorldWide CoWorking Session on Biomimicry with Michaela Emch</Link></li>
+
                 <li> <Link target='_blank' href='https://www.youtube.com/watch?v=gsAHHDG1I4Y'>
                     Video Biomimicry Switzerland – “My
                     biomimicry journey”
                 </Link> </li>
-                <li> <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>GRC WorldWide CoWorking Session on Biomimicry with Michaela Emch
-                </Link></li>
-                <li> <Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> GRC Biomimicry Discussion</Link></li>
-                <li> <Link target='_blank' href='https://electricperspectives.podbean.com/e/018-global-circuit-strengthening-communications-using-biomimicry/'> Electric Perspectives Podcast - Strengthening Communications Using Biomimicry</Link></li>
                 <li> <Link target='_blank' href='https://youtu.be/MtnUB_Mw3tg'> What is biomimicry in 2 minutes (from Biomimicry Switzerland’s webinar)</Link></li>
             </ul>
         </>,
@@ -157,7 +157,7 @@ const sentencesIn = {
         <>
             <LinkSlide target="_blank" href="https://asknature.org"> Ask Nature</LinkSlide><br />
             <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
-            <LinkSlide target="_blank" href="https://www.bornglobalfoundation.org">Born Global Foundation</LinkSlide>
+            <LinkSlide target="_blank" href="https://www.bornglobalfoundation.org">Born Global Foundation</LinkSlide><br />
             <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
             <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
             <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
@@ -168,14 +168,14 @@ const sentencesIn = {
         </>,
         <>
             <ul>
+            <li> <Link target='_blank' href='https://electricperspectives.podbean.com/e/018-global-circuit-strengthening-communications-using-biomimicry/'> Electric Perspectives Podcast - Strengthening Communications Using Biomimicry</Link></li>
+            <li> <Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> GRC Biomimicry Discussion</Link></li>
+            <li> <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>GRC WorldWide CoWorking Session on Biomimicry with Michaela Emch</Link></li>
+
                 <li> <Link target='_blank' href='https://www.youtube.com/watch?v=gsAHHDG1I4Y'>
-            Video Biomimicry Switzerland – “My
-            biomimicry journey”
-        </Link> </li>
-                <li> <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>GRC WorldWide CoWorking Session on Biomimicry with Michaela Emch
-                </Link></li>
-                <li> <Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> GRC Biomimicry Discussion</Link></li>
-                <li> <Link target='_blank' href='https://electricperspectives.podbean.com/e/018-global-circuit-strengthening-communications-using-biomimicry/'> Electric Perspectives Podcast - Strengthening Communications Using Biomimicry</Link></li>
+                    Video Biomimicry Switzerland – “My
+                    biomimicry journey”
+                </Link> </li>
                 <li> <Link target='_blank' href='https://youtu.be/MtnUB_Mw3tg'> What is biomimicry in 2 minutes (from Biomimicry Switzerland’s webinar)</Link></li>
             </ul>
         </>,
@@ -261,7 +261,7 @@ const sentencesIn = {
         <>            
             <LinkSlide target="_blank" href="https://asknature.org"> Ask Nature</LinkSlide><br />
             <LinkSlide target="_blank" href="https://biomimicryswitzerland.org">Biomimicry Switzerland</LinkSlide><br />
-            <LinkSlide target="_blank" href="https://www.bornglobalfoundation.org">Born Global Foundation</LinkSlide>
+            <LinkSlide target="_blank" href="https://www.bornglobalfoundation.org">Born Global Foundation</LinkSlide><br />
             <LinkSlide target="_blank" href="https://www.complexityweekend.com">Complexity Weekend</LinkSlide><br />
             <LinkSlide target="_blank" href="https://systemicdesignlabs.ethz.ch">ETH Zürich – Systemics Design Labs</LinkSlide><br />
             <LinkSlide target="_blank" href="https://futurevalue.global">Future Value Global</LinkSlide><br />
@@ -272,14 +272,14 @@ const sentencesIn = {
         </>,
         <>
             <ul>
+            <li> <Link target='_blank' href='https://electricperspectives.podbean.com/e/018-global-circuit-strengthening-communications-using-biomimicry/'> Electric Perspectives Podcast - Strengthening Communications Using Biomimicry</Link></li>
+            <li> <Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> GRC Biomimicry Discussion</Link></li>
+            <li> <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>GRC WorldWide CoWorking Session on Biomimicry with Michaela Emch</Link></li>
+
                 <li> <Link target='_blank' href='https://www.youtube.com/watch?v=gsAHHDG1I4Y'>
                     Video Biomimicry Switzerland – “My
                     biomimicry journey”
                 </Link> </li>
-                <li> <Link target='_blank' href='https://youtu.be/2XhlLstMeqI'>GRC WorldWide CoWorking Session on Biomimicry with Michaela Emch
-                </Link></li>
-                <li> <Link target='_blank' href='https://youtu.be/pDhyCg9RO0E'> GRC Biomimicry Discussion</Link></li>
-                <li> <Link target='_blank' href='https://electricperspectives.podbean.com/e/018-global-circuit-strengthening-communications-using-biomimicry/'> Electric Perspectives Podcast - Strengthening Communications Using Biomimicry</Link></li>
                 <li> <Link target='_blank' href='https://youtu.be/MtnUB_Mw3tg'> What is biomimicry in 2 minutes (from Biomimicry Switzerland’s webinar)</Link></li>
             </ul>
         </>,
