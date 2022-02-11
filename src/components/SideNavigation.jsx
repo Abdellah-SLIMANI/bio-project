@@ -6,9 +6,14 @@ import { paragraphe, titre } from './lang';
 import { MainLogo } from './MainSlide';
 import OrderBook from './OrderBook';
 import logo from '../img/mainLogo.png'
+import bcropLogo_fr from '../img/Bcrop_fr.png'
+import bcropLogo_eng from '../img/Bcrop_eng.png'
+import bcropLogo_du from '../img/Bcrop_du.jpeg'
 
 export default function SideNavigation({lang,setLang}) {
 
+    console.log('Lang', lang)
+    const bcropLogo = lang == 'fr' ? bcropLogo_fr : lang == 'en' ? bcropLogo_eng : bcropLogo_du
     const navItems = [
         {
             title: titre(lang,13),
@@ -53,6 +58,11 @@ export default function SideNavigation({lang,setLang}) {
                     </NavLink>
                   ))
               }
+              <NavLink>
+                  <a href='https://www.bcorporation.net/en-us/find-a-b-corp/company/eclosions'>
+                  <img src={bcropLogo} alt="" style={{width: '20%'}}/>
+                  </a>
+              </NavLink>
           </NavList>
     )
 }

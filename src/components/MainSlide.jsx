@@ -30,7 +30,7 @@ const MainTitle = styled.h1`
     margin-top: 100px;
     text-align: left;
     color: black;
-    transform: translate(0,100%);
+    transform: translate(-50%,100%);
     @media screen  and (max-width: 760px){
         transform: translate(-120%,200%);
         font-size: 3rem;

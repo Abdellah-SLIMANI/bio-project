@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.0812d49b.chunk.css",
-    "main.js": "/static/js/main.afa09817.chunk.js",
-    "main.js.map": "/static/js/main.afa09817.chunk.js.map",
+    "main.js": "/static/js/main.048f8057.chunk.js",
+    "main.js.map": "/static/js/main.048f8057.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a21e7d97.js",
     "runtime-main.js.map": "/static/js/runtime-main.a21e7d97.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
@@ -13,6 +13,9 @@
     "static/css/main.0812d49b.chunk.css.map": "/static/css/main.0812d49b.chunk.css.map",
     "static/js/2.18ef19c1.chunk.js.LICENSE.txt": "/static/js/2.18ef19c1.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/Optima Medium.0d2173d7.ttf",
+    "static/media/Bcrop_du.b4498748.jpeg": "/static/media/Bcrop_du.b4498748.jpeg",
+    "static/media/Bcrop_eng.33ea2c1f.png": "/static/media/Bcrop_eng.33ea2c1f.png",
+    "static/media/Bcrop_fr.419b80b4.png": "/static/media/Bcrop_fr.419b80b4.png",
     "static/media/booken.f2c2cfac.jpg": "/static/media/booken.f2c2cfac.jpg",
     "static/media/bookfr.0411d874.jpg": "/static/media/bookfr.0411d874.jpg",
     "static/media/mainLogo.5faa75f5.png": "/static/media/mainLogo.5faa75f5.png",
@@ -24,6 +27,6 @@
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.18ef19c1.chunk.js",
     "static/css/main.0812d49b.chunk.css",
-    "static/js/main.afa09817.chunk.js"
+    "static/js/main.048f8057.chunk.js"
   ]
 }
